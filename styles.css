@@ -5,11 +5,6 @@
 *{
     font-family: 'Raleway-Regular';
 }
-h3{
-    font-weight: bold;
-    color:black; 
-    margin-top: 50px; 
-}
 div{
     text-align: left;
     float: left;
@@ -17,9 +12,25 @@ div{
 ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     text-align: right;
-    margin-left: 1100px;
+    margin-left: 1100px;  
+}
+a{
+    text-decoration-line: none;
+    color: black;
+}
+span{
+    color:#0065FC;
+}
+a:hover{
+    text-decoration-line: overline;
+    color:#0065FC;
+}
+h3{
+    font-weight: bold;
+    color:black; 
+    margin-top: 50px;
 }
 footer p{
     font-weight: bold;
