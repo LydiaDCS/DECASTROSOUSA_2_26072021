@@ -5,7 +5,7 @@
 *{
     font-family: 'Raleway-Regular';
 }
-div{
+header div{
     text-align: left;
     float: left;
 }
@@ -32,12 +32,8 @@ h3{
     color:black; 
     margin-top: 50px;
 }
-footer p{
-    font-weight: bold;
-}
 strong{
     font-weight: bold;
-}
 }
 a:hover{
     color: blue;
@@ -49,4 +45,19 @@ ol{
     text-align: left;
     margin-right: 1000px;
     margin-left: 0px;
+}
+footer{
+    background-color:#F2F2F2;
+    
+}
+footer p{
+    font-weight: bold;
+}
+/*a revoir*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items:baseline;
+    margin: auto;
 }
