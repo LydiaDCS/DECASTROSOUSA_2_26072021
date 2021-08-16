@@ -1,9 +1,14 @@
 @font-face {
     font-family:'Raleway-Regular'; 
     src: url('static/Raleway-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
 }
-*{
-    font-family: 'Raleway-Regular';
+body{
+    font-family: 'Raleway-Regular',Arial, Helvetica, sans-serif;
+}
+#bloc-page{
+    margin: auto;
 }
 header div{
     text-align: left;
@@ -53,11 +58,20 @@ footer{
 footer p{
     font-weight: bold;
 }
-/*a revoir*/
 footer{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items:baseline;
     margin: auto;
+}
+/*a revoir*/
+section{
+    display: flex;
+}
+#hébergements{
+    flex: 3;
+}
+#populaires{
+    flex: 1;
 }
