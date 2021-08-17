@@ -53,28 +53,39 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #F2F2F2;
-    width: 1000px;
-    height: 500px;
-    flex-grow: 3;
+    justify-content: space-between;
 }
-section img{
+
+section article{
+    flex:1 75%;
+    background-color: #F2F2F2;
+    margin-right: 50px white;
+}
+aside{
+    flex: 2 25%;
+    background-color: #F2F2F2;
+}
+article{
+    flex: 3 100%;
+    background-color: #F2F2F2;
+}
+section article img{
     width: 200px; 
     height: 100px;
     object-fit: cover; 
     border-radius: 7px;
     border:6px,white;
-}
-
-article img{
+    background-color: #F2F2F2;
+ }
+aside img{
     width: 150px; 
     height: 150px;
     object-fit: cover; 
     border-radius: 7px;
     border: 6px white;
 }
-article{
-    float: right;
+article img{
+
 }
 
 
