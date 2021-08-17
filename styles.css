@@ -44,28 +44,38 @@ strong{
     font-weight: bold;
 }
 
-section img, article img{ 
-    width: 150px; 
-    height: 150px;
-    object-fit: cover; 
-}
+
 
 
 /* voir*/
+
 section{
     display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-}
-
-article{
-    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
+    width: 1000px;
+    height: 500px;
+    flex-grow: 3;
+}
+section img{
+    width: 200px; 
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 7px;
+    border:6px,white;
 }
 
-
-
+article img{
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 7px;
+    border: 6px white;
+}
+article{
+    float: right;
+}
 
 
 
@@ -82,5 +92,7 @@ footer{
     justify-content: space-around;
     flex-direction: row;
     align-items:baseline;
-    margin: auto;
+    margin: 100px;
+    padding-right: 10px;
+    padding-bottom: 30px;
 }
