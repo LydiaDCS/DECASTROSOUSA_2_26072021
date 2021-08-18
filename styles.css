@@ -35,7 +35,7 @@ ul a:hover{
 a:hover{
     color: blue;
 }
-span{
+span,.fa{
     color:#0065FC;
     font-size: 1em;
 }
@@ -47,85 +47,73 @@ h3{
 strong{
     font-weight: bold;
 }
-.fa{
-    color: #0065FC;
-}
-
 /* voir*/
 section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-#hébergements img{
-    width: 200px; 
-    height: 100px; 
-    border-radius: 10px;
-    border: solid 5px white;
-    border-bottom: solid 70px white;
-    margin-top: 10px;
-}
-
 #hébergements{
     background-color:#F2F2F2;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    flex: 3;
     width: 900px;
     height: 900px;
+    border-radius: 20px;
+    position: relative;
+    padding-right: 10px;
 }
-
-#populaires img{
-    width: 150px; 
-    height: 150px;
-    object-fit: cover; 
-    border-radius: 10px;
+#hébergements img{
+    width: 200px; 
+    height: 100px; 
+    border-radius: 20px;
     border: solid 5px white;
-    border-right: solid 70px white;
-    margin: auto;
+    border-bottom: solid 70px white;
+    margin-top: 70px;
 }
 #populaires{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    justify-content: space-between;
     background-color: #F2F2F2;
+    border-radius: 20px;
+    position: relative;
+    height: 900px;
+    width: 500px;
 }
-#activités img{
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    border: solid 3px #F2F2F2;
-    
+#populaires img{
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 20px;
+    border: solid 5px white;
+    border-right: solid 140px white;
+    margin: 70px;
 }
 #activités{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-self: baseline;
 }
-.photo:nth-child(1){
-    order: 5;
+#activités img{
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    border-bottom: solid 50px white;
+    box-shadow:5px 5px #F2F2F2;    
 }
-.photo:nth-child(2){
-    order: 3;
-}
-.photo:nth-child(3){
-    order: 4;
-}
-.photo:nth-child(4){
-    order: 6;
-}
-.photo:nth-child(5){
-    order: 2;
-}
-.photo:nth-child(6){
-    order: 1;
-}
-aside+h3{
-
+section h3{
+    position: absolute;
+    left: 0;
+    top: 0;
     clear: both;
+    margin: 20px;
 }
+
 article span
 {
     text-align: right;
