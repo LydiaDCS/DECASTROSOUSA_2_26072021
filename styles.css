@@ -33,7 +33,7 @@ ul a:hover{
     border-top: solid #0065FC;
 }
 a:hover{
-    color: blue;
+    color:#0065FC;
 }
 span,.fa{
     color:#0065FC;
@@ -56,15 +56,16 @@ header i{
     border-radius: 50%;
 }
 header span{
-    border: solid 1px #F2F2F2;
+    border: solid 2px #F2F2F2;
     border-radius: 40px;   
     padding: 7px 7px;
     padding-left: 0;
+    
 }
 header nav span{
     border: none;
 }
-/* voir*/
+
 section{
     display: flex;
     flex-direction: row;
@@ -94,6 +95,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 20px;
     position: relative;
@@ -121,7 +123,7 @@ section{
     width: 400px;
     border-radius: 20px;
     border-bottom: solid 50px white;
-    box-shadow:5px 5px #F2F2F2;    
+    box-shadow:5px 5px #F2F2F2;   
 }
 section h3{
     position: absolute;
@@ -133,6 +135,19 @@ section h3{
 
 article span{
     text-align: right;
+}
+#bouton{
+    background-color:#0065FC ;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 7px 7px 7px;
+}
+input{
+    font-weight: bold;
+    padding: 7px 7px 7px 7px;
+    border: 1px #F2F2F2;
+    font-size: 1em;
 }
 /*voir*/
 .héberg :nth-child(1){
@@ -178,3 +193,60 @@ footer{
     margin: 100px;
     padding: 20px 10px 20px 10px;
 }
+
+
+
+/*voir*/
+@media all and (max-width:1024px){
+    #bloc-page{
+        height: auto;
+        width: auto;
+    }
+    ul span{
+        float: right;
+        text-align: right;
+    }
+section{
+    flex-direction: column;
+}
+#hébergements{
+    background-color: white;
+}
+#hébergements img{
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    border-bottom: solid 50px white;
+    box-shadow:5px 5px #F2F2F2;  
+}
+
+#populaires{
+    text-align: center;
+    width: auto;
+    }
+
+    ul a:hover{
+        border-top: 0;
+        border-bottom: solid #0065FC;
+    }
+    a:hover{
+        color:#0065FC;
+    }
+    nav {
+        font-size: 1.2em;
+    }
+footer{
+    margin: auto;
+    flex-direction: column;
+}
+
+footer div{
+    margin-top: 15px;
+    margin-bottom:10px;
+}
+footer div+a{
+    margin-top: 20px;
+}
+
+}
+
