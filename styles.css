@@ -37,7 +37,7 @@ header .fa{
 h3{
     font-weight:bold;
     color:black; 
-    margin-top: 50px;
+    margin-top: 40px;
 }
 strong{
     font-weight: bold;
@@ -54,7 +54,6 @@ ul{
     justify-content:space-around;
     text-align: right;
     margin-left: 1000px;
-    align-items: flex-end;
     margin-top: 20px;
 }
 header nav span{
@@ -74,97 +73,15 @@ header span{
     border: solid 2px #F2F2F2;
     border-radius: 40px;   
     padding: 7px 7px;
-    padding-left: 0;  
+    padding-left: 0px;  
+    border-left: solid 1px #DEEBFF;
+}
+header span:hover{
+    background-color: #DEEBFF;
 }
 span a{
     padding-left: 7px;
 }
-/*body*/
-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:flex-start;
-}
-#hébergements{
-    background-color: #F2F2F2;
-    height: 900px;
-    width: 900px;
-    border-radius: 20px;
-    margin: 5px 5px 5px 5px;
-    padding-left: 20px;
-}
-.héberg{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.hotel img{
-    width: 200px; 
-    height: 100px; 
-    border-radius: 20px;
-    border: solid 5px white;
-    border-bottom: solid 80px white;
-    margin-top: 20px;
-}
-.hotel{
-    position: relative;
-}
-
-section article p{
-    position: absolute;
-    bottom: 0;
-    padding: 10px 0px 0px 10px;
-}
-
-#populaires{
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column;
-    float: right;
-    background-color: #F2F2F2; 
-    border-radius: 20px; 
-    height: 900px;
-    width: 500px;
-    margin: 10px 5px 5px 5px;
-    padding-right: 20px; 
-}
-.populaire img{
-    height: 150px;
-    width: 150px;
-    border-radius: 20px;
-    border: solid 5px white;
-    border-right: solid 200px white;
-    margin-left: 20px;
-}
-.populaire{
-    position: relative;
-}
-aside article p{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding-left: 0;
-}
-
-/*revoir mise en page*/
-#activités{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-self: baseline;
-}
-#activités img{
-    height: 200px;
-    width: 400px;
-    border-radius: 20px;
-    border-bottom: solid 50px white;
-    box-shadow:5px 5px #F2F2F2;   
-}
-
 #bouton{
     background-color:#0065FC ;
     color: white;
@@ -179,6 +96,155 @@ input{
     font-size: 1em;
 }
 
+/*body*/
+
+#hébergements{
+    background-color: #F2F2F2;
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+    padding:10px 30px 10px 30px;
+}
+.héberg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hotel img{
+    width: 200px; 
+    height: 100px; 
+    border: solid 5px white;
+    border-bottom: solid 80px white;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.hotel{
+    position: relative;
+}
+
+.hotel:nth-child(1){
+    order: 4;
+}
+.hotel:nth-child(2){
+    order:6;
+}
+.hotel:nth-child(3){
+    order:2
+}
+.hotel:nth-child(4){
+    order:1;
+}
+.hotel:nth-child(5){
+    order:5;
+}
+.hotel:nth-child(6){
+    order:3;
+}
+
+section article p{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px 0px 10px;
+}
+section{
+    position: relative;
+}
+article+span{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 40px;
+}
+
+
+#populaires{
+    background-color: #F2F2F2; 
+    height: 700px;
+    width: 550px;
+    border-radius: 20px; 
+    margin: 10px 10px 10px 10px; 
+    padding:10px 5px 5px 10px;
+    margin-top: 0;
+}
+aside h3{
+    padding-left: 30px;
+}
+
+.pop{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.populaire img{
+    height: 150px;
+    width: 150px;
+    border: solid 5px white;
+    border-right: solid 300px white;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+/*pq ça ne marche pas?*/
+.populaire{
+    position:relative
+}
+.populaire:nth-child(1){
+     order:2;
+}
+.populaire:nth-child(2){
+     order:1;
+}
+.populaire:nth-child(3){
+     order:3;
+}
+
+aside article p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*revoir mise en page*/
+#port{
+    height: 20px;
+    width: 20px;
+}
+#fort{
+    height:100px;
+    width: 100px;
+}
+.calanques{
+height: 100px;
+width: 100px;
+}
+.dame{
+    height: 100px;
+    width: 100px;
+}
+#activités{
+    height:auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#activités img{
+    height: 200px;
+    width: 300px;
+    border-bottom: solid 50px white;
+    border-radius: 20px;
+    box-shadow:5px 5px #F2F2F2;  
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+/*foot*/
 
 footer{
     background-color:#F2F2F2;
