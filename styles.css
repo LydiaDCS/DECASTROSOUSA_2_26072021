@@ -1,3 +1,4 @@
+/*Général*/
 @font-face {
     font-family:'Raleway-Regular'; 
     src: url('static/Raleway-Regular.ttf');
@@ -8,12 +9,42 @@ body{
     font-family: 'Raleway-Regular',Arial, Helvetica, sans-serif;
 }
 #bloc-page{
-   
     margin: auto;
 }
+p{
+    color: black;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+}
+a:hover{
+    color:#0065FC;
+}
+header .fa{
+    color:#0065FC;
+    font-size: 1em;
+    border: solid 10px #DEEBFF;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+}
+.fa{
+    color: blue;
+}
+.empty{
+    color: #F2F2F2;
+}
+h3{
+    font-weight:bold;
+    color:black; 
+    margin-top: 50px;
+}
+strong{
+    font-weight: bold;
+}
 
+/*Header*/
 header div{
-    
     text-align: left;
     float: left;
 }
@@ -24,93 +55,101 @@ ul{
     text-align: right;
     margin-left: 1000px;
     align-items: flex-end;
+    margin-top: 20px;
 }
-a{
-    text-decoration-line: none;
-    color: black;
+header nav span{
+    border: none;
 }
 ul a:hover{
     border-top: solid #0065FC;
 }
-a:hover{
-    color:#0065FC;
-}
-span,.fa{
-    color:#0065FC;
-    font-size: 1em;
-}
-p{
-    color: black;
-}
-h3{
-    font-weight:bold;
-    color:black; 
-    margin-top: 50px;
-}
-strong{
-    font-weight: bold;
-}
-header i{
-    border: solid 10px #DEEBFF;
-    background-color: #DEEBFF;
+#info{
+    color:#0065FC ;
+    background-color: white;
+    border:solid 2px lightgrey;
     border-radius: 50%;
+    padding: 4px 12px 4px 12px;
 }
 header span{
     border: solid 2px #F2F2F2;
     border-radius: 40px;   
     padding: 7px 7px;
-    padding-left: 0;
-    
+    padding-left: 0;  
 }
-header nav span{
-    border: none;
+span a{
+    padding-left: 7px;
 }
-
+/*body*/
 section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+#hébergements{
+    background-color: #F2F2F2;
+    height: 900px;
+    width: 900px;
+    border-radius: 20px;
+    margin: 5px 5px 5px 5px;
+    padding-left: 20px;
+}
+.héberg{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#hébergements{
-    background-color:#F2F2F2;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 900px;
-    height: 900px;
-    border-radius: 20px;
-    position: relative;
-    padding-right: 10px;
-}
-#hébergements img{
+
+.hotel img{
     width: 200px; 
     height: 100px; 
     border-radius: 20px;
     border: solid 5px white;
-    border-bottom: solid 70px white;
-    margin-top: 70px;
+    border-bottom: solid 80px white;
+    margin-top: 20px;
 }
+.hotel{
+    position: relative;
+}
+
+section article p{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px 0px 10px;
+}
+
 #populaires{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    position: relative;
+    flex-flow: column;
+    float: right;
+    background-color: #F2F2F2; 
+    border-radius: 20px; 
     height: 900px;
     width: 500px;
+    margin: 10px 5px 5px 5px;
+    padding-right: 20px; 
 }
-#populaires img{
-    width: 150px; 
+.populaire img{
     height: 150px;
-    object-fit: cover; 
+    width: 150px;
     border-radius: 20px;
     border: solid 5px white;
-    border-right: solid 140px white;
-    margin: 30px;
+    border-right: solid 200px white;
+    margin-left: 20px;
 }
+.populaire{
+    position: relative;
+}
+aside article p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 0;
+}
+
+/*revoir mise en page*/
 #activités{
     display: flex;
     flex-direction: row;
@@ -125,17 +164,7 @@ section{
     border-bottom: solid 50px white;
     box-shadow:5px 5px #F2F2F2;   
 }
-section h3{
-    position: absolute;
-    left: 0;
-    top: 0;
-    clear: both;
-    margin: 20px;
-}
 
-article span{
-    text-align: right;
-}
 #bouton{
     background-color:#0065FC ;
     color: white;
@@ -149,33 +178,6 @@ input{
     border: 1px #F2F2F2;
     font-size: 1em;
 }
-/*voir*/
-.héberg :nth-child(1){
-    width: 200px; 
-    height: 100px; 
-    position: relative;
-}
-.héberg :nth-child(2){
-    position: relative;
-}
-.héberg :nth-child(3){}
-.héberg :nth-child(4){}
-.héberg :nth-child(5){}
-.héberg :nth-child(6){}
-
-.description :nth-child(1){
-    position: absolute;
-    left:0;
-
-}
-.description :nth-child(2){
-    position: absolute;
-}
-.description :nth-child(3){}
-.description :nth-child(4){}
-.description :nth-child(5){}
-.description :nth-child(6){}
-/**/
 
 
 footer{
