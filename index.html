@@ -22,10 +22,12 @@
                 </nav>
             <h3> Trouvez votre hébergement pour des vacances de rêve </h3>
             <p>En plein centre ville ou en pleine nature </p> 
-                <form method="POST" action="https://maps.google.fr">     
+            
+                <form class method="POST" action="https://maps.google.fr"><i class="fas fa-map-marker-alt"></i>
                     <input type="search" name="clic" id="clic" value="Marseille, France" required/>
-                    <input id=bouton type="submit" value="Rechercher"/><br/>
-                </form> <br/>
+                    <input id=bouton type="submit" value="Rechercher"/>
+                </form>
+            </i><br/>
             <p><strong>Filtres</strong> 
             <span><i class="fa solid fa-money-bill-wave"></i><a href="#"> Économique</a></span>
             <span><i class="fa solid fa-child"></i><a href="#">Familial</a></span>
@@ -120,7 +122,7 @@
         </article>
         </section>
 
-        
+        <section>
         <aside id="populaires"> 
             <h3>Les plus populaires</h3>
             <div class="pop">
@@ -159,11 +161,11 @@
             </article>
             </div>
         </aside><br/><br/>
-        
+        </section>
 
-      
+        <section>
         <h3>Activités à Marseille</h3><br/><br/>
-    <article id="activités">
+        <article id="activités">
         <div class="port"><img src="projet2-reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
             alt="Vieux Port"/> 
             <h4>Vieux Port</h4></div><br/> 
@@ -188,9 +190,9 @@
 
         </aside>
         </article>
+        </section>
 
-
-        <footer>
+    <footer>
         <div class="propos"> <p>A propos </p>
             <a href="#">Fonctionnement du site</a> <br/><br/>
             <a href="#">Conditions générales de vente</a><br/><br/>
@@ -201,7 +203,7 @@
         <div class="assistance"><p>Assistance</p>
             <a href="#">Centre d'aide</a><br/><br/>
             <a href="#">Nous contacter</a><br/></div>
-        </footer>
+    </footer>
         </div>
     </body>
 </html>

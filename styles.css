@@ -41,11 +41,14 @@ h3{
     padding-left: 10px;
     
 }
+header h3{
+    padding-left: 0px;
+}
 strong{
     font-weight: bold;
 }
 
-/*Header*/
+/*Header_ voir bouton comment coller le tout....et icônes manquantes..*/
 header div{
     text-align: left;
     float: left;
@@ -90,15 +93,23 @@ span a{
     border-radius: 5px;
     border: none;
     padding: 7px 7px 7px 7px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 input{
     font-weight: bold;
     padding: 7px 7px 7px 7px;
     border: 1px #F2F2F2;
     font-size: 1em;
+    border: solid 1px #F2F2F2;
+}
+form i{
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
 }
 
-/*body*/
+/*body-voir comment aligner les plus populaires et images floues*/
 
 #hébergements{
     background-color: #F2F2F2;
@@ -196,10 +207,9 @@ aside h3{
     position:relative
 }
 aside article p{
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    bottom: 0;  
 }
+
 .populaire:nth-child(1){
      order:2;
 }
@@ -212,7 +222,7 @@ aside article p{
 
 
 
-/*revoir mise en page*/
+/*revoir mise en page- taille image*/
 
 #activités{
     height:auto;
@@ -293,6 +303,7 @@ footer{
 
 
 
+
 /*refaire mise en page modifier*/
 @media all and (max-width:1024px){
     #bloc-page{
@@ -319,8 +330,8 @@ footer{
     background-color: white;
 }
 
-
-#populaires{
+/*ça ne marche pas?*/
+#populaires:first-child{
     text-align: center;
     width: auto;
     }
