@@ -38,6 +38,8 @@ h3{
     font-weight:bold;
     color:black; 
     margin-top: 40px;
+    padding-left: 10px;
+    
 }
 strong{
     font-weight: bold;
@@ -166,7 +168,7 @@ article+span{
     border-radius: 20px; 
     margin: 10px 10px 10px 10px; 
     padding:10px 5px 5px 10px;
-    margin-top: 0;
+    margin-top: 0px;
 }
 aside h3{
     padding-left: 30px;
@@ -193,6 +195,11 @@ aside h3{
 .populaire{
     position:relative
 }
+aside article p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 .populaire:nth-child(1){
      order:2;
 }
@@ -203,29 +210,10 @@ aside h3{
      order:3;
 }
 
-aside article p{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
+
 
 /*revoir mise en page*/
-#port{
-    height: 20px;
-    width: 20px;
-}
-#fort{
-    height:100px;
-    width: 100px;
-}
-.calanques{
-height: 100px;
-width: 100px;
-}
-.dame{
-    height: 100px;
-    width: 100px;
-}
+
 #activités{
     height:auto;
     width: auto;
@@ -233,15 +221,55 @@ width: 100px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 550px;
 }
-#activités img{
+.port img{
+    height: 450px;
+    width: 400px;
+    border-bottom: solid 50px white;
+    border-radius: 20px;
+    box-shadow:5px 5px #F2F2F2; 
+    margin: 10px 10px 10px 10px;
+}
+.fort img{
     height: 200px;
     width: 300px;
     border-bottom: solid 50px white;
     border-radius: 20px;
     box-shadow:5px 5px #F2F2F2;  
-    margin: 20px 20px 20px 20px;
-    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+}
+.iles img{
+    height: 100px;
+    width: 300px;
+    border-bottom: solid 50px white;
+    border-radius: 20px;
+    box-shadow:5px 5px #F2F2F2; 
+    margin: 10px 10px 10px 10px;
+}
+.calanques img{
+    height: 450px;
+    width: 400px;
+    border-bottom: solid 50px white;
+    border-radius: 20px;
+    box-shadow:5px 5px #F2F2F2;  
+    margin: 10px 10px 10px 10px;
+}
+.dame img{
+    height: 150px;
+    width: 300px;
+    border-bottom: solid 50px white;
+    border-radius: 20px;
+    box-shadow:5px 5px #F2F2F2;
+    margin: 10px 10px 10px 10px;
+}
+.longchamps img{
+    height: 150px;
+    width: 300px;
+    border-bottom: solid 50px white;
+    border-radius: 20px;
+    box-shadow:5px 5px #F2F2F2;
+    margin: 10px 10px 10px 10px;
 }
 
 /*foot*/
@@ -258,13 +286,14 @@ footer{
     justify-content: space-around;
     flex-direction: row;
     align-items:baseline;
-    margin: 100px;
-    padding: 20px 10px 20px 10px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 50px 10px 50px 10px;
 }
 
 
 
-/*voir*/
+/*refaire mise en page modifier*/
 @media all and (max-width:1024px){
     #bloc-page{
         height: auto;
@@ -274,19 +303,22 @@ footer{
         float: right;
         text-align: right;
     }
-section{
+.héberg{
     flex-direction: column;
+}
+.hotel img{
+        width: 350px; 
+        height: 150px; 
+        border: solid 5px white;
+        border-bottom: solid 100px white;
+        border-radius: 20px;
+        box-shadow: 5px 5px #F2F2F2;
+        margin-top: 30px;
 }
 #hébergements{
     background-color: white;
 }
-#hébergements img{
-    height: 200px;
-    width: 400px;
-    border-radius: 20px;
-    border-bottom: solid 50px white;
-    box-shadow:5px 5px #F2F2F2;  
-}
+
 
 #populaires{
     text-align: center;
