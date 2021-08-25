@@ -18,9 +18,9 @@ a{
     text-decoration-line: none;
     color: black;
 }
-a:hover{
+a:hover {
     color:#0065FC;
-}
+} 
 header .fa{
     color:#0065FC;
     font-size: 1em;
@@ -37,7 +37,7 @@ header .fa{
 h3{
     font-weight:bold;
     color:black; 
-    margin-top: 40px;
+    margin-top: 30px;
     padding-left: 10px;
     
 }
@@ -48,24 +48,26 @@ strong{
     font-weight: bold;
 }
 
-/*Header_ voir bouton comment coller le tout....et icônes manquantes..*/
+/*Header_ voir bouton comment coller le tout et marseillle en gras....et icônes manquantes..*/
 header div{
     text-align: left;
     float: left;
+    margin-bottom: 25px;
 }
 ul{
     list-style-type: none;
     display: flex;
     justify-content:space-around;
+    flex-direction: row;
     text-align: right;
     margin-left: 1000px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
-header nav span{
-    border: none;
-}
+
 ul a:hover{
     border-top: solid #0065FC;
+    margin-top: 10px;
+    background-color: white;
 }
 #info{
     color:#0065FC ;
@@ -74,43 +76,71 @@ ul a:hover{
     border-radius: 50%;
     padding: 4px 12px 4px 12px;
 }
-header span{
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+#bouton{
+    background-color:#0065FC ;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+input{
+    padding: 10px 10px 10px 10px;
+    border: 1px #F2F2F2;
+    font-size: 1em;
+    border: solid 1px #F2F2F2;
+}
+
+form i{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+#clic{
+    border: solid 1px #F2F2F2;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+header p span{
     border: solid 2px #F2F2F2;
-    border-radius: 40px;   
-    padding: 7px 7px;
+    border-radius: 50px;   
+    padding: 7px 7px 7px 7px;
     padding-left: 0px;  
     border-left: solid 1px #DEEBFF;
+    margin: 10px;
 }
+
+header li div{
+    color:#0065FC;
+    font-weight: bold;
+    background-color: white;
+}
+
 header span:hover{
     background-color: #DEEBFF;
 }
 span a{
     padding-left: 7px;
+    margin: auto;
 }
-#bouton{
-    background-color:#0065FC ;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 7px 7px 7px 7px;
-    margin-left: 0%;
-    margin-right: 0%;
-}
-input{
-    font-weight: bold;
-    padding: 7px 7px 7px 7px;
-    border: 1px #F2F2F2;
-    font-size: 1em;
-    border: solid 1px #F2F2F2;
-}
-form i{
-    background-color: #F2F2F2;
-    border-radius: 5px;
-    padding: 10px 10px 10px 10px;
-}
+
 
 /*body-voir comment aligner les plus populaires et images floues*/
-
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items:center;
+    padding:10px;
+}
 #hébergements{
     background-color: #F2F2F2;
     height: 600px;
@@ -133,11 +163,6 @@ form i{
     border-radius: 20px;
     margin-top: 30px;
 }
-
-.hotel{
-    position: relative;
-}
-
 .hotel:nth-child(1){
     order: 4;
 }
@@ -156,71 +181,64 @@ form i{
 .hotel:nth-child(6){
     order:3;
 }
-
-section article p{
+.hotel{
+    position: relative;
+}
+.hotel p{
     position: absolute;
     bottom: 0;
     padding: 10px 0px 0px 10px;
 }
-section{
+article{
     position: relative;
 }
-article+span{
+article span{
     position: absolute;
     bottom: 0;
-    padding-bottom: 40px;
+    padding-bottom: 40px;   
 }
 
 
+
+.entete{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items:center;
+}
 #populaires{
     background-color: #F2F2F2; 
-    height: 700px;
+    height: 600px;
     width: 550px;
     border-radius: 20px; 
-    margin: 10px 10px 10px 10px; 
-    padding:10px 5px 5px 10px;
+    margin: 5px 5px 5px 5px; 
+    padding: 5px 2px 5px 2px;
     margin-top: 0px;
 }
-aside h3{
-    padding-left: 30px;
-}
-
-.pop{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-}
 .populaire img{
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     border: solid 5px white;
-    border-right: solid 300px white;
+    border-right: solid 250px white;
     border-radius: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
-/*pq ça ne marche pas?*/
 .populaire{
-    position:relative
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
 }
-aside article p{
-    bottom: 0;  
+.populaire p{
+    position: absolute;
+    top: 0;
+    padding-left: 200px;
+    padding-top: 5px;
 }
-
-.populaire:nth-child(1){
-     order:2;
-}
-.populaire:nth-child(2){
-     order:1;
-}
-.populaire:nth-child(3){
-     order:3;
-}
-
-
 
 /*revoir mise en page- taille image*/
 
