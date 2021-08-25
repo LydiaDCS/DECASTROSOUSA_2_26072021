@@ -41,40 +41,42 @@ h3{
     padding-left: 10px;  
 }
 header h3{
+    margin-top: 10px;
     padding-left: 0px;
 }
 strong{
     font-weight: bold;
 }
 
-/*Header_ voir bouton comment coller le tout*/
-header div{
-    text-align: left;
-    float: left;
-    margin-bottom: 25px;
-    margin-right: 30px;
-}
-ul{
-    list-style-type: none;
+/*Header*/
+
+.menu{
     display: flex;
     justify-content:space-around;
     flex-direction: row;
     text-align: right;
     margin-left: 1000px;
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-right: 40px;
+    color:#0065FC;
+    font-weight: bold;
+    background-color: white;
 }
 
-ul a:hover{
+.menu a:hover{
     border-top: solid #0065FC;
-    margin-top: 10px;
     background-color: white;
+}
+.inscription{
+   color:#0065FC;
 }
 #info{
     color:#0065FC ;
     background-color: white;
-    border:solid 2px lightgrey;
+    border:solid 1px lightgrey;
     border-radius: 50%;
-    padding: 4px 12px 4px 12px;
+    padding: 7px 9px 7px 9px;
+    font-size: 0.6em;
 }
 form {
     display: flex;
@@ -85,7 +87,7 @@ form {
 #bouton{
     background-color:#0065FC ;
     color: white;
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     border: none;
     padding: 10px 10px 10px 10px;
     margin-left: 0%;
@@ -100,13 +102,14 @@ input{
 
 form i{
     background-color: #F2F2F2;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 12px 12px 12px 12px;
 }
 #clic{
     border: solid 1px #F2F2F2;
-    border-radius: 10px;
     font-weight: bold;
+    border-left:none;
+    border-right:none;
 }
 
 header p span{
@@ -116,12 +119,6 @@ header p span{
     padding-left: 0px;  
     border-left: solid 1px #DEEBFF;
     margin: 10px;
-}
-
-header li div{
-    color:#0065FC;
-    font-weight: bold;
-    background-color: white;
 }
 
 header span:hover{
@@ -152,7 +149,7 @@ section{
     height: 600px;
     width: 700px;
     border-radius: 20px;
-    margin: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 5px;
     padding:10px 30px 10px 30px;
 }
 .héberg{
