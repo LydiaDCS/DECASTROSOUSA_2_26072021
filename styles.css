@@ -1,14 +1,14 @@
 /*Général*/
-@font-face {
-  font-family: "Raleway-Regular";
-  src: url("static/Raleway-Regular.ttf");
+body{
+  font-family:'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
 }
+
 body {
   font-family: "Raleway-Regular", Arial, Helvetica, sans-serif;
   margin: 20px 20px 20px 20px;
-  padding:0px 30px 0px 30px;
+  padding: 0px 30px 0px 30px;
 }
 p {
   color: black;
@@ -22,15 +22,9 @@ a:hover,
 section p:hover {
   color: #0065fc;
 }
-header .fa {
-  color: #0065fc;
-  font-size: 1em;
-  border: solid 10px #deebff;
-  background-color: #deebff;
-  border-radius: 50%;
-}
+
 .fa {
-  color:#0065fc;
+  color: #0065fc;
   font-size: 0.7em;
 }
 .empty {
@@ -54,7 +48,7 @@ strong {
 }
 
 /*Header*/
-header{
+header {
   margin: 20px 20px 20px 20px;
 }
 #logo {
@@ -68,7 +62,6 @@ header{
   text-align: right;
   margin-left: 900px;
   color: #0065fc;
-  font-weight: bold;
   background-color: white;
 }
 
@@ -78,6 +71,7 @@ header{
 }
 .inscription {
   color: #0065fc;
+  font-weight: bold;
 }
 #info {
   color: #0065fc;
@@ -114,7 +108,6 @@ input {
   font-size: 1em;
   border: solid 1px #f2f2f2;
 }
-
 form i {
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
@@ -126,7 +119,6 @@ form i {
   border-left: none;
   border-right: none;
 }
-
 header p span {
   border: solid 2px #f2f2f2;
   border-radius: 50px;
@@ -135,7 +127,6 @@ header p span {
   border-left: solid 1px #deebff;
   margin: 10px;
 }
-
 header span:hover {
   background-color: #deebff;
 }
@@ -150,8 +141,15 @@ section span strong {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+header .fa {
+  color: #0065fc;
+  font-size: 1em;
+  border: solid 10px #deebff;
+  background-color: #deebff;
+  border-radius: 50%;
+}
 /*body et images floues*/
+/*Hébergements*/
 section {
   display: flex;
   justify-content: space-between;
@@ -219,6 +217,7 @@ article span {
   padding-bottom: 50px;
 }
 
+/*Populaires*/
 .entete {
   display: flex;
   justify-content: space-between;
@@ -264,8 +263,7 @@ article span {
   padding-top: 20px;
 }
 
-/*revoir mise en page- taille image*/
-
+/*Activités*/
 #activités {
   display: flex;
   flex-direction: row;
@@ -362,14 +360,69 @@ footer {
 }
 
 /*refaire mise en page modifier*/
-@media all and (max-width: 1024px) {
-  #bloc-page {
+@media all and (max-width: 768px) {
+  body {
     height: auto;
-    width: auto;
+    max-width: 768px;
   }
-  ul span {
-    float: right;
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap-reverse row-reverse;
     text-align: right;
+    margin-left: 150px;
+    color: #0065fc;
+    font-weight: bold;
+    background-color: white;
+  }
+
+  .inscription{
+    margin-right:200px ;
+  }
+  .ancre:hover {
+    border-top: none;
+    border-bottom: solid #0065fc;
+    background-color: white;
+  }
+  /*changer mettre loupe*/
+  #bouton {
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  header p span {
+    border: solid 2px #f2f2f2;
+    border-radius: 50px;
+    padding: 7px 7px 7px 7px;
+    padding-left: 0px;
+    border-left: solid 1px #deebff;
+    margin: 10px;
+  }
+  header span:hover {
+    background-color: #deebff;
+  }
+  span a {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin: auto;
+  }
+  section span strong {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  header .fa {
+    color: #0065fc;
+    font-size: 1em;
+    border: solid 10px #deebff;
+    background-color: #deebff;
+    border-radius: 50%;
   }
   .héberg {
     flex-direction: column;
