@@ -7,8 +7,7 @@ body{
 
 body {
   font-family: "Raleway-Regular", Arial, Helvetica, sans-serif;
-  margin: 20px 20px 20px 20px;
-  padding: 0px 30px 0px 30px;
+  margin: auto;
 }
 p {
   color: black;
@@ -47,24 +46,32 @@ strong {
   font-weight: bold;
 }
 
+img{
+  object-fit:cover;
+}
+
 /*Header*/
 header {
-  margin: 20px 20px 20px 20px;
+  margin: 10px 80px 0px 80px;
 }
-#logo {
-  float: left;
-  margin-top: 20px;
+.haut{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end
 }
 .menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   flex-direction: row;
-  text-align: right;
-  margin-left: 900px;
   color: #0065fc;
   background-color: white;
 }
-
+.menu a{
+  margin-left: 50px;
+  margin-right: 20px;
+}
 .ancre:hover {
   border-top: solid #0065fc;
   background-color: white;
@@ -122,7 +129,7 @@ form i {
 header p span {
   border: solid 2px #f2f2f2;
   border-radius: 50px;
-  padding: 7px 7px 7px 7px;
+  padding: 7.5px 7.5px 7.5px 7.5px;
   padding-left: 0px;
   border-left: solid 1px #deebff;
   margin: 10px;
@@ -141,6 +148,7 @@ section span strong {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 header .fa {
   color: #0065fc;
   font-size: 1em;
@@ -148,15 +156,17 @@ header .fa {
   background-color: #deebff;
   border-radius: 50%;
 }
-/*body et images floues*/
-/*Hébergements*/
+
+/*Body- Hébergements*/
 section {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 #hébergements {
   background-color: #f2f2f2;
@@ -165,6 +175,7 @@ section {
   border-radius: 20px;
   padding: 30px 30px 30px 30px;
   margin-right: 30px;
+  margin-left: 20px;
 }
 .héberg {
   display: flex;
@@ -223,7 +234,7 @@ article span {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding-left: 25px;
+  padding-left: 30px;
   padding-right: 30px;
 }
 .entete .fas {
@@ -232,7 +243,7 @@ article span {
 #populaires {
   background-color: #f2f2f2;
   height: 600px;
-  width: 450px;
+  width: 400px;
   border-radius: 20px;
   margin: 5px 5px 5px 5px;
   padding: 30px 10px 30px 10px;
@@ -242,7 +253,7 @@ article span {
   height: 130px;
   width: 130px;
   border: solid 5px white;
-  border-right: solid 250px white;
+  border-right: solid 220px white;
   border-radius: 20px;
   margin-left: 30px;
   margin-right: 30px;
@@ -274,7 +285,7 @@ article span {
 }
 .port img {
   height: 400px;
-  width: 300px;
+  width: 320px;
   border-bottom: solid 50px white;
   border-radius: 20px;
   box-shadow: 5px 5px #f2f2f2;
@@ -300,7 +311,7 @@ article span {
 }
 .calanques img {
   height: 400px;
-  width: 300px;
+  width: 320px;
   border-bottom: solid 50px white;
   border-radius: 20px;
   box-shadow: 5px 5px #f2f2f2;
@@ -337,7 +348,7 @@ article span {
 .grande h4 {
   position: absolute;
   bottom: 0;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   padding-left: 35px;
   font-weight: bolder;
 }
@@ -354,118 +365,19 @@ footer {
   justify-content: space-around;
   flex-direction: row;
   align-items: baseline;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  padding: 50px 10px 50px 10px;
+  padding: 30px 30px 30px 30px;
 }
 
-/*refaire mise en page modifier*/
-@media all and (max-width: 768px) {
-  body {
-    height: auto;
-    max-width: 768px;
-  }
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap-reverse row-reverse;
-    text-align: right;
-    margin-left: 150px;
-    color: #0065fc;
-    font-weight: bold;
-    background-color: white;
-  }
 
-  .inscription{
-    margin-right:200px ;
-  }
-  .ancre:hover {
-    border-top: none;
-    border-bottom: solid #0065fc;
-    background-color: white;
-  }
-  /*changer mettre loupe*/
-  #bouton {
-    background-color: #0065fc;
-    color: white;
-    border-radius: 0px 10px 10px 0px;
-    border: none;
-    padding: 10px 10px 10px 10px;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
+
+
+@media (min-width:991px) and (max-width:768px){
   
-  header p span {
-    border: solid 2px #f2f2f2;
-    border-radius: 50px;
-    padding: 7px 7px 7px 7px;
-    padding-left: 0px;
-    border-left: solid 1px #deebff;
-    margin: 10px;
-  }
-  header span:hover {
-    background-color: #deebff;
-  }
-  span a {
-    padding-left: 7px;
-    padding-right: 7px;
-    margin: auto;
-  }
-  section span strong {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  header .fa {
-    color: #0065fc;
-    font-size: 1em;
-    border: solid 10px #deebff;
-    background-color: #deebff;
-    border-radius: 50%;
-  }
-  .héberg {
-    flex-direction: column;
-  }
-  .hotel img {
-    width: 350px;
-    height: 150px;
-    border: solid 5px white;
-    border-bottom: solid 100px white;
-    border-radius: 20px;
-    box-shadow: 5px 5px #f2f2f2;
-    margin-top: 30px;
-  }
-  #hébergements {
-    background-color: white;
-  }
-
-  /*ça ne marche pas?*/
-  #populaires:first-child {
-    text-align: center;
-    width: auto;
-  }
-
-  ul a:hover {
-    border-top: 0;
-    border-bottom: solid #0065fc;
-  }
-  a:hover {
-    color: #0065fc;
-  }
-  nav {
-    font-size: 1.2em;
-  }
-  footer {
-    margin: auto;
-    flex-direction: column;
-  }
-
-  footer div {
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-  footer div + a {
-    margin-top: 20px;
-  }
 }
+  
+@media all and (min-width: 991pxpx) {
+ 
+ 
+  
+}
+
