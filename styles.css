@@ -1,4 +1,6 @@
 /*Général*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
 #bloc_paage {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -105,6 +107,7 @@ form i {
   padding: 15px 15px 15px 15px;
   margin-left: 0%;
   margin-right: 0%;
+  font-weight:600;
 }
 
 header p span {
@@ -113,14 +116,14 @@ header p span {
   padding: 13px 15px 13px 15px;
   padding-left: 0px;
   border-left: none;
-  margin: 10px;
+  margin-left: 30px;
 }
 header span:hover {
   background-color: #deebff;
 }
 span a {
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 header .fa {
@@ -144,6 +147,7 @@ header .fa {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 /*Body- Hébergements*/
@@ -283,54 +287,61 @@ article span {
   width: auto;
   margin-bottom: 30px;
 }
+.h3mobile{
+  display: none;
+}
 .port img {
   height: 400px;
   width: 320px;
   border-bottom: solid 50px white;
   border-radius: 20px;
-  box-shadow: 5px 5px #f2f2f2;
+  box-shadow: 4px 4px 5px #f2f2f2;
   margin: 20px 22px 0px 20px;
+  
 }
 
 .fort img {
-  height: 170px;
+  height: 220px;
   width: 300px;
   border-bottom: solid 50px white;
   border-radius: 20px;
-  box-shadow: 5px 5px #f2f2f2;
+  box-shadow: 4px 4px 5px #f2f2f2;
   margin: 20px 22px 0px 20px;
+  
 }
 
 .iles img {
-  height: 140px;
+  height: 90px;
   width: 300px;
   border-bottom: solid 50px white;
   border-radius: 20px;
-  box-shadow: 5px 5px #f2f2f2;
+  box-shadow: 4px 4px 5px #f2f2f2;
   margin: 20px 22px 0px 20px;
+
 }
 .calanques img {
   height: 400px;
   width: 320px;
   border-bottom: solid 50px white;
   border-radius: 20px;
-  box-shadow: 5px 5px #f2f2f2;
+  box-shadow: 4px 4px 5px #f2f2f2;
   margin: 20px 22px 0px 20px;
 }
 .dame img {
-  height: 140px;
+  height: 150px;
   width: 300px;
   border-bottom: solid 50px white;
   border-radius: 20px;
-  box-shadow: 5px 5px #f2f2f2;
+  box-shadow: 4px 4px 5px #f2f2f2;
   margin: 20px 22px 0px 20px;
+  
 }
 .longchamps img {
-  height: 170px;
+  height: 160px;
   width: 300px;
   border-bottom: solid 50px white;
   border-radius: 20px;
-  box-shadow: 5px 5px #f2f2f2;
+  box-shadow: 4px 4px 5px #f2f2f2;
   margin: 20px 22px 0px 20px;
 }
 .petite {
@@ -370,44 +381,24 @@ footer {
 
 /*revoir*/
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   body {
     margin: auto;
     height: auto;
     width: auto;
   }
-  header {
-    margin: 50px 150px 50px 150px;
+  .inscription {
+    margin: 10px 10px 10px 450px;
   }
-  /*revoir*/
-  .haut {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .menu {
-    display: flex;
-    flex-flow: column wrap-reverse;
-    align-content: flex-end;
-    color: #0065fc;
-    background-color: white;
-    font-size: em;
-  }
-  /**/
   .ancre:hover {
     border-bottom: solid #0065fc;
     border-top: none;
-    background-color: white;
   }
   .ancre {
     border-bottom: solid#f2f2f2;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
     margin-right: 0px;
-  }
-  .inscription {
-    font-size: 1.2em;
-    margin-bottom: 20px;
   }
   /*mettre loupe seulement*/
   #bouton {
@@ -450,15 +441,13 @@ footer {
     border-radius: 0px;
   }
   .populaire img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border: solid 10px white;
-    border-right: solid 300px white;
+    border-right: solid 400px white;
     border-radius: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    box-shadow: solid 5px #6e6e70;
+    margin: 10px 10px 10px 10px;
+    box-shadow: solid 20px #6e6e70;
   }
   .populaire {
     display: flex;
@@ -471,9 +460,9 @@ footer {
   .populaire p {
     position: absolute;
     top: 0;
-    padding-left: 250px;
-    padding-top: 20px;
-    font-size: 1.5em;
+    padding-left: 300px;
+    padding-top: 15px;
+    font-size: 2em;
   }
 
   /*hébergements*/
@@ -525,6 +514,248 @@ footer {
     height: auto;
     width: auto;
   }
+  .h3desktop{
+    display: none;
+  }
+  .port img {
+    height: 300px;
+    width: 600px;
+    border-bottom: solid 70px white;
+    box-shadow: 2px 2px 5px #f2f2f2;
+    margin: auto;
+  }
+
+  .fort img {
+    height: 300px;
+    width: 600px;
+    border-bottom: solid 70px white;
+    box-shadow: 5px 5px #f2f2f2;
+    margin: auto;
+  }
+
+  .iles img {
+    height: 300px;
+    width: 600px;
+    border-bottom: solid 70px white;
+    box-shadow: 5px 5px #f2f2f2;
+    margin: auto;
+  }
+  .calanques img {
+    height: 300px;
+    width: 600px;
+    border-bottom: solid 70px white;
+    box-shadow: 5px 5px #f2f2f2;
+    margin: auto;
+  }
+  .dame img {
+    height: 300px;
+    width: 600px;
+    border-bottom: solid 70px white;
+    box-shadow: 5px 5px #f2f2f2;
+    margin: auto;
+  }
+  .longchamps img {
+    height: 300px;
+    width: 600px;
+    border-bottom: solid 70px white;
+    box-shadow: 5px 5px #f2f2f2;
+    margin: auto;
+  }
+
+  .petite {
+    position: relative;
+  }
+  .petite h4 {
+    position: absolute;
+    bottom: 0;
+    padding-left: 35px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+  }
+  .grande {
+    position: relative;
+  }
+  .grande h4 {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    font-weight: bolder;
+  }
+  /*foot{*/
+
+  footer p {
+    font-weight: bold;
+    
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: baseline;
+    margin: auto;
+    height: auto;
+    font-size: 1.3em;
+    padding: 30px 30px 30px 30px;
+    background-color: #f2f2f2;
+  }
+  .propos, .hébergements, .assistance {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+  body {
+    margin: auto;
+    height: auto;
+    width: auto;
+  }
+  #logo{
+    height: 60px;
+  }
+  .haut{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin: auto;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    color: #0065fc;
+    font-size: 1.3em;
+    width: auto;
+    margin: auto;
+  }
+  .inscription {
+    margin: 10px 10px 10px 450px;
+  }
+  .ancre:hover {
+    border-bottom: solid #0065fc;
+    border-top: none;
+  }
+  .ancre {
+    border-bottom: solid#f2f2f2;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-right: 0px;
+  }
+  /*mettre loupe seulement*/
+  #bouton {
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  /*body*/
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+  }
+
+  /*Populaires*/
+  .entete {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .entete .fas {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  #populaires {
+    height: auto;
+    width: auto;
+    border-radius: 0px;
+    margin: 0;
+  }
+  .populaire img {
+    height: 250px;
+    width: 250px;
+    border: solid 10px white;
+    border-right: solid 400px white;
+    border-radius: 30px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: solid 20px #6e6e70;
+  }
+  .populaire {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .populaire p {
+    position: absolute;
+    top: 0;
+    padding-left: 300px;
+    padding-top: 15px;
+    font-size: 2em;
+  }
+
+  /*hébergements*/
+  .héberg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+  .hotel img {
+    height: 300px;
+    width: 600px;
+    border: solid 5px white;
+    border-bottom: solid 90px white;
+    box-shadow: 5px 5px 5px #f2f2f2;
+    margin-top: 20px;
+    margin: auto;
+  }
+  #hébergements {
+    background-color: white;
+    margin: auto;
+    height: auto;
+  }
+
+  .hotel {
+    position: relative;
+  }
+  .hotel p {
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px 0px 30px;
+  }
+  article {
+    position: relative;
+  }
+  article span {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
+  }
+  /*Activités*/
+  #activités {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    width: auto;
+  }
+  
   .port img {
     height: 300px;
     width: 600px;
@@ -592,23 +823,22 @@ footer {
   }
   /*foot{*/
 
-  footer {
-    background-color: #f2f2f2;
-  }
   footer p {
     font-weight: bold;
+    
   }
   footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: baseline;
-    padding: 30px 30px 30px 30px;
     margin: auto;
     height: auto;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    padding: 30px 30px 30px 30px;
+    background-color: #f2f2f2;
   }
   .propos, .hébergements, .assistance {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
