@@ -293,7 +293,7 @@ article span {
   margin-bottom: 30px;
 }
 .h3mobile{
-  display: none;
+  visibility: hidden;
 }
 .port img {
   height: 400px;
@@ -484,9 +484,9 @@ footer {
   }
   #populaires {
     height: auto;
-    width: auto;
+    width: 810px;
     border-radius: 0px;
-    margin: 0;
+    margin: 0%;
   }
   .populaire img {
     height: 250px;
@@ -517,34 +517,36 @@ footer {
   .héberg {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     height: auto;
     width: auto;
+    padding-bottom: 200px;
+    margin: 0%;
   }
   .hotel img {
-    height: 300px;
-    width: 600px;
-    border: solid 5px white;
-    border-bottom: solid 90px white;
-    box-shadow: 5px 5px 5px #f2f2f2;
-    margin-top: 20px;
-    margin: auto;
+    height: 350px;
+    width: 810px;
+    border-bottom: solid 160px white;
+    box-shadow: 10px 10px 10px #f2f2f2;
+    margin: 0px 0px 35px 0px;
+    border-radius: 35px;
   }
   #hébergements {
     background-color: white;
-    margin: auto;
-    height: auto;
+    margin: 0%;
+    height: 0%;
+    margin: 0px 50px 0px 0px;
   }
 
   .hotel {
     position: relative;
   }
   .hotel p {
-    font-size: 1.2em;
     position: absolute;
     bottom: 0;
-    padding: 10px 0px 0px 30px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    font-size: 36px;
   }
   article {
     position: relative;
@@ -552,7 +554,8 @@ footer {
   article span {
     position: absolute;
     bottom: 0;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
+    font-size: 36px;
   }
   /*Activités*/
   #activités {
@@ -568,6 +571,8 @@ footer {
   }
   .h3mobile{
     visibility: visible;
+    margin-bottom: 40px;
+    font-size: 50px;
   }
   .port img {
     height: 350px;
