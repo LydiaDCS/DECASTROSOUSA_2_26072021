@@ -108,9 +108,9 @@ form i {
   padding: 15px 15px 15px 15px;
   margin-left: 0%;
   margin-right: 0%;
-  font-weight:600;
+  font-weight: 600;
 }
-#loupe{
+#loupe {
   visibility: hidden;
 }
 header p span {
@@ -242,7 +242,6 @@ article span {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: center;
   padding-left: 15px;
   padding-right: 30px;
   margin-bottom: 20px;
@@ -291,10 +290,10 @@ article span {
   padding-left: 0%;
   margin-left: 0%;
   margin-right: 60px;
-  width:auto;
+  width: auto;
   height: auto;
 }
-.h3mobile{
+.h3mobile {
   display: none;
 }
 .port img {
@@ -304,7 +303,6 @@ article span {
   border-radius: 20px;
   box-shadow: 4px 4px 5px #f2f2f2;
   margin: 20px 22px 0px 20px;
-  
 }
 .fort img {
   height: 220px;
@@ -383,16 +381,16 @@ footer {
 
 /*revoir*/
 
-@media all and ( max-width: 1024px ) {
+@media all and (max-width: 1024px) {
   body {
     margin: 0%;
     overflow-x: hidden;
   }
-  #logo{
+  #logo {
     height: 115px;
     margin: 0px;
   }
-  .inscription{
+  .inscription {
     font-size: 30px;
     margin: 0px;
     margin-bottom: 50px;
@@ -400,37 +398,36 @@ footer {
     margin-left: 110px;
     margin-right: 0%;
   }
-  .haut{
+  .haut {
     display: flex;
     flex-direction: row;
     justify-content: first baseline;
-    align-items:center;
+    align-items: flex-start;
     margin: 0px;
   }
   .menu {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content:flex-end;
+    align-items:stretch;
     color: #0065fc;
     font-size: 15px;
     margin: 0 px;
   }
-  .ancre{
+  .ancre {
     font-size: 35px;
     margin: 0px;
     width: 100%;
     border-bottom: solid#f2f2f2;
     padding-right: 60px;
     padding-left: 60px;
-
   }
-  
+
   .ancre:hover {
     border-bottom: solid #0065fc;
     border-top: none;
   }
- 
+
   form {
     display: flex;
     flex-direction: row;
@@ -463,7 +460,7 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
   }
-  
+
   #info {
     color: #0065fc;
     background-color: white;
@@ -488,24 +485,24 @@ footer {
     padding: 15px 15px 15px 15px;
     margin-left: 0%;
     margin-right: 0%;
-    font-weight:600;
+    font-weight: 600;
   }
-  
-  header h3+ header p{
+
+  header h3 + header p {
     font-size: 35px;
   }
   #bouton {
     visibility: hidden;
   }
-  #loupe{
-    visibility:visible;
+  #loupe {
+    visibility: visible;
     color: #0065fc;
     border-radius: 0px 10px 10px 0px;
     border: none;
     padding: 15px 15px 15px 15px;
     margin-left: 0%;
     margin-right: 0%;
-    font-weight:600;
+    font-weight: 600;
   }
 
   /*body*/
@@ -536,7 +533,7 @@ footer {
     border-radius: 0px;
     margin-left: 0px;
     padding-left: 0px;
-    margin:0%;
+    margin: 0%;
   }
   .populaire img {
     height: 260px;
@@ -545,7 +542,7 @@ footer {
     border-right: solid 570px white;
     border-radius: 30px;
     box-shadow: solid 20px #6e6e70;
-    margin:0px;
+    margin: 0px;
   }
   .populaire {
     display: flex;
@@ -618,10 +615,10 @@ footer {
     align-items: center;
     width: 100%;
   }
-  .h3desktop{
+  .h3desktop {
     visibility: hidden;
   }
-  .h3mobile{
+  .h3mobile {
     display: initial;
     margin-bottom: 40px;
     font-size: 50px;
@@ -704,16 +701,16 @@ footer {
     font-weight: bold;
     margin-bottom: 30px;
     margin-top: 90px;
-
   }
   footer {
     display: flex;
     flex-direction: column;
     font-size: 25px;
   }
-  .propos, .hébergements, .assistance {
+  .propos,
+  .hébergements,
+  .assistance {
     margin-left: 30px;
     margin-bottom: 30px;
   }
-
 }
