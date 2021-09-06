@@ -286,14 +286,16 @@ article span {
 #activités {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: auto;
-  width: auto;
+  justify-content: center;
   margin-bottom: 30px;
+  padding-left: 0%;
+  margin-left: 0%;
+  margin-right: 60px;
+  width:auto;
+  height: auto;
 }
 .h3mobile{
-  visibility: hidden;
+  display: none;
 }
 .port img {
   height: 400px;
@@ -381,13 +383,9 @@ footer {
 
 /*revoir*/
 
-
-
-@media all and (max-width:1024px){
+@media all and ( max-width: 1024px ) {
   body {
-    margin: 0;
-    height: auto;
-    width: auto;
+    margin: 0%;
     overflow-x: hidden;
   }
   #logo{
@@ -419,34 +417,70 @@ footer {
     margin: 0 px;
   }
   .ancre{
-    margin-left:0%;
-    flex: 1 auto auto;
-    flex-basis: auto;
+    font-size: 35px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: solid#f2f2f2;
+    padding-right: 60px;
+    padding-left: 60px;
+
   }
-  .menu a{
-    padding-left: 50px;
-  }
+  
   .ancre:hover {
     border-bottom: solid #0065fc;
     border-top: none;
   }
-  .ancre {
-    border-bottom: solid#f2f2f2;
-    padding-right: 60px;
-    padding-left: 60px;
-    margin: 0px;
+ 
+  form {
+    display: flex;
+    flex-direction: row;
   }
-  header h3{
-    font-size: 40px;
+  form i {
+    background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
+    padding: 17px 17px 17px 17px;
   }
-  header h3+p{
-    font-size: 20px;
+  #clic {
+    border: solid 1px #f2f2f2;
+    border-left: none;
+    border-right: none;
+    padding: 15px 15px 15px 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  header p span {
+    border: solid 2px #f2f2f2;
+    border-radius: 50px;
+    padding: 13px 15px 13px 15px;
+    padding-left: 0px;
+    border-left: none;
+    margin-left: 30px;
+  }
+  header span:hover {
+    background-color: #deebff;
+  }
+  span a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #info {
+    color: #0065fc;
+    background-color: white;
+    border: solid 1px lightgrey;
+    border-radius: 50%;
+    padding: 18px 30px 18px 30px;
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  .inf {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
   }
   #bouton {
-    visibility: hidden;
-  }
-  #loupe{
-    visibility:visible;
     background-color: #0065fc;
     color: white;
     border-radius: 0px 10px 10px 0px;
@@ -456,7 +490,23 @@ footer {
     margin-right: 0%;
     font-weight:600;
   }
-
+  
+  header h3+ header p{
+    font-size: 35px;
+  }
+  #bouton {
+    visibility: hidden;
+  }
+  #loupe{
+    visibility:visible;
+    color: #0065fc;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    padding: 15px 15px 15px 15px;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-weight:600;
+  }
 
   /*body*/
   section {
@@ -464,7 +514,7 @@ footer {
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
-    margin: 0;
+    margin: 0%;
   }
 
   /*Populaires*/
@@ -473,27 +523,27 @@ footer {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .entete .fas {
-    font-size: 2em;
+    font-size: 45px;
   }
   h3 {
-    font-size: 2em;
+    font-size: 45px;
   }
   #populaires {
     height: auto;
-    width: 810px;
+    width: 100%;
     border-radius: 0px;
-    margin: 0%;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin:0%;
   }
   .populaire img {
-    height: 250px;
+    height: 260px;
+    width: 260px;
     border: solid 10px white;
-    border-right: solid 400px white;
+    border-right: solid 570px white;
     border-radius: 30px;
-    margin: 10px 10px 10px 10px;
     box-shadow: solid 20px #6e6e70;
     margin:0px;
   }
@@ -501,15 +551,18 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     position: relative;
     margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .populaire p {
     position: absolute;
     top: 0;
     padding-left: 300px;
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 2em;
   }
 
@@ -517,11 +570,10 @@ footer {
   .héberg {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: auto;
-    width: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding-bottom: 200px;
-    margin: 0%;
   }
   .hotel img {
     height: 350px;
@@ -556,23 +608,24 @@ footer {
     bottom: 0;
     padding-bottom: 90px;
     font-size: 36px;
+    padding-right: 510px;
   }
   /*Activités*/
   #activités {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: auto;
-    width: auto;
-    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   .h3desktop{
     visibility: hidden;
   }
   .h3mobile{
-    visibility: visible;
+    display: initial;
     margin-bottom: 40px;
     font-size: 50px;
+    padding-right: 300px;
   }
   .port img {
     height: 350px;
@@ -650,15 +703,17 @@ footer {
   footer p {
     font-weight: bold;
     margin-bottom: 30px;
-    margin-top: 40px;
-    font-size: 36px;
+    margin-top: 90px;
+
   }
   footer {
     display: flex;
     flex-direction: column;
+    font-size: 25px;
   }
   .propos, .hébergements, .assistance {
     margin-left: 30px;
     margin-bottom: 30px;
   }
+
 }
