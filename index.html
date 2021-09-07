@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <script
       src="https://kit.fontawesome.com/ef7377b164.js"
       crossorigin="anonymous"
@@ -13,20 +14,19 @@
   <body>
     <div id="bloc-page">
       <header>
-        <div class="haut">
+        <div class="navigation">
           <img
+            class="headerimg"
             src="Projet2-Reservia/images/logo/Reservia.svg"
-            alt="Logo du site"
+            alt="Reservia"
             id="logo"
           />
           <br /><br />
-          <div class="menu">
-            <a href="#"><div class="inscription">S'inscrire</div></a>
-            <a class="ancre" href="#activités">Activités</a>
-            <a class="ancre" href="#hébergements">Hébergements</a>
-            
-            
-          </div>
+          <nav class="headernav">
+            <a class="ancre" href="#hébergements" data-active="true">Hébergements</a>
+            <a class="ancre" href="#activités"data-active="false">Activités</a>
+          </nav>
+            <a class="inscription" href="#">S'inscrire</a>
         </div>
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p>En plein centre ville ou en pleine nature</p>

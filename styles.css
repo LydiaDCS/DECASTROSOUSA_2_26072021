@@ -44,7 +44,7 @@ h3 {
   font-size: 1.4em;
 }
 header h3 {
-  margin-top: 30px;
+  margin-top: 1px;
   padding-left: 0px;
 }
 strong {
@@ -59,20 +59,29 @@ img {
 header {
   margin: 10px 80px 0px 80px;
 }
-.haut {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.navigation{
+  display: grid;
   align-items: center;
+  max-width: 1440px;
+  margin: auto;
 }
-.menu {
+.navigation{
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "logo navbar inscription";
+}
+.headerimg{
+  grid-area: logo;
+}
+.headernav{
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
+  grid-area: navbar;
+  padding-left: 800px;
+  padding-right: 40px;
 }
-.menu a {
-  margin-left: 50px;
-  margin-right: 20px;
+.inscription{
+  grid-area: inscription;
 }
 .ancre:hover {
   border-top: solid #0065fc;
@@ -108,8 +117,6 @@ form i {
   border-radius: 0px 10px 10px 0px;
   border: none;
   padding: 15px 15px 15px 15px;
-  margin-left: 0%;
-  margin-right: 0%;
   font-weight: 600;
 }
 #loupe {
@@ -289,8 +296,6 @@ article span {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 30px;
-  padding-left: 0%;
-  margin-left: 0%;
   margin-right: 60px;
   width: auto;
   height: auto;
@@ -382,11 +387,19 @@ footer {
 }
 
 /*revoir*/
+@media screen and (min-width: 376px) and (max-width:768px){
 
-@media all and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 376px) {
   body {
-    margin: 0%;
+    margin: 0;
     overflow-x: hidden;
+  }
+  .navigation{
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . inscription"
+                          "navbar navbar navbar"
   }
   #logo {
     height: 115px;
@@ -398,25 +411,8 @@ footer {
     margin-bottom: 50px;
     margin-top: 80px;
     margin-left: 110px;
-    margin-right: 0%;
   }
-  .haut {
-    display: flex;
-    flex-direction: row;
-    justify-content: first baseline;
-    align-items: flex-start;
-    margin: 0px;
-  }
-  .menu {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:flex-end;
-    align-items:stretch;
-    align-content: space-between;
-    color: #0065fc;
-    font-size: 15px;
-    margin: 0 px;
-  }
+  
   .ancre {
     font-size: 35px;
     margin: 0px;
@@ -439,7 +435,6 @@ footer {
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
     padding: 23px 17px 17px 17px;
-
   }
   .mobile_filtres{
    display: flex;
@@ -453,7 +448,7 @@ footer {
     border: solid 1px #f2f2f2;
     border-left: none;
     border-right: none;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 20px;
     font-size: 1.5em;
     font-weight: bold;
   }
@@ -495,8 +490,6 @@ footer {
     border-radius: 0px 10px 10px 0px;
     border: none;
     padding: 15px 15px 15px 15px;
-    margin-left: 0%;
-    margin-right: 0%;
     font-weight: 600;
   }
 
@@ -515,8 +508,6 @@ footer {
     border-radius: 10px 10px 10px 10px;
     border: none;
     padding: 20px 20px 20px 20px;
-    margin-left: 0%;
-    margin-right: 0%;
     font-weight: 600;
   }
 
@@ -526,7 +517,8 @@ footer {
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
-    margin: 0%;
+    margin: 0;
+    padding:0;
   }
 
   /*Populaires*/
@@ -548,7 +540,7 @@ footer {
     border-radius: 0px;
     margin-left: 0px;
     padding-left: 0px;
-    margin: 0%;
+    margin: 0;
   }
   .populaire img {
     height: 260px;
@@ -711,21 +703,23 @@ footer {
     font-size: 36px;
   }
   /*foot{*/
-
-  footer p {
-    font-weight: bold;
-    margin-bottom: 30px;
-    margin-top: 90px;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-  }
-  .propos,
-  .hébergements,
-  .assistance {
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
+    footer p {
+      font-weight: bold;
+      margin-bottom: 30px;
+      margin-top: 90px;
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+      width: 100%;
+      
+    }
+    .propos,
+    .hébergements,
+    .assistance {
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+  
 }
