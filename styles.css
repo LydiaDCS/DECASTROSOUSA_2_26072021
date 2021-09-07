@@ -11,6 +11,7 @@ body {
   font-family: "Raleway-Regular", Arial, Helvetica, sans-serif;
   margin: auto;
   height: auto;
+  width: 100%;
   overflow-x: hidden;
 }
 p {
@@ -101,6 +102,7 @@ form i {
 }
 
 #bouton {
+  display: initial;
   background-color: #0065fc;
   color: white;
   border-radius: 0px 10px 10px 0px;
@@ -410,6 +412,7 @@ footer {
     flex-flow: row wrap;
     justify-content:flex-end;
     align-items:stretch;
+    align-content: space-between;
     color: #0065fc;
     font-size: 15px;
     margin: 0 px;
@@ -435,7 +438,16 @@ footer {
   form i {
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
-    padding: 17px 17px 17px 17px;
+    padding: 23px 17px 17px 17px;
+
+  }
+  .mobile_filtres{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+  }
+  .mobile_filtres span{
+    font-size: 30px;
   }
   #clic {
     border: solid 1px #f2f2f2;
@@ -492,14 +504,17 @@ footer {
     font-size: 35px;
   }
   #bouton {
-    visibility: hidden;
+  display: none;
   }
-  #loupe {
+  #loupe{
     visibility: visible;
-    color: #0065fc;
-    border-radius: 0px 10px 10px 0px;
+  }
+  #loupe .fas{
+    color: white;
+    background-color: #0065fc;
+    border-radius: 10px 10px 10px 10px;
     border: none;
-    padding: 15px 15px 15px 15px;
+    padding: 20px 20px 20px 20px;
     margin-left: 0%;
     margin-right: 0%;
     font-weight: 600;
