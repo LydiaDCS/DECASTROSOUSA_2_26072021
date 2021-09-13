@@ -675,6 +675,12 @@ footer {
     overflow-x: hidden;
     width: 200%;
   }
+  #bloc_paage {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 0;
+  }
   
   .navigation {
     grid-template-columns: auto 1fr auto;
@@ -860,12 +866,13 @@ footer {
   #populaires {
     background-color: #f2f2f2;
     height: 780px;
-    width: 620px;
+    width: 100%;
     border-radius: 20px;
     margin: 0;
     margin-bottom: 50px;
-    padding: 30px 20px 30px 20px;
+    padding: 30px 0px 30px 0px;
     margin-top: 10px;
+    margin: 0;
   }
   .populaire img {
     height: 180px;
