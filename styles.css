@@ -199,12 +199,7 @@ section {
 section h3 {
   margin-top: 20px;
 }
-section span strong {
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 .hotel img {
   width: 230px;
   height: 110px;
@@ -249,6 +244,8 @@ article span {
   bottom: 0;
   margin-bottom: 50px;
   font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /*Populaires*/
@@ -457,6 +454,8 @@ footer {
   }
   .inf {
     margin-bottom: 0px;
+    padding-bottom: 0;
+    font-size: 20px;
   }
   /*Body- Hébergements*/
   section {
@@ -490,12 +489,7 @@ footer {
   section h3 {
     margin-top: 20px;
   }
-  section span strong {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+
   article {
     position: relative;
   }
@@ -504,6 +498,8 @@ footer {
     bottom: 0;
     margin-bottom: 40px;
     font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
   }
 
   /*Populaires*/
@@ -813,7 +809,7 @@ footer {
     margin-right: 20px;
   }
   h3{
-    font-size: 30px;
+    font-size: 35px;
   }
   #hébergements {
     background-color: white;
@@ -828,7 +824,7 @@ footer {
     height: 250px;
     width: 620px;
     border: solid 10px white;
-    border-bottom: solid 80px white;
+    border-bottom: solid 110px white;
     border-radius: 35px;
     margin-top: 30px;
     box-shadow: 1px 1px 5px#c4c4c9;
@@ -837,12 +833,7 @@ footer {
   section h3 {
     margin-top: 20px;
   }
-  section span strong {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  
   article {
     position: relative;
   }
@@ -850,7 +841,15 @@ footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 40px;
-    font-size: 1.1em;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  article p{
+    position: absolute;
+    margin-left: 20px;
+    font-size: 22px;
+    
   }
 
   /*Populaires*/
@@ -861,13 +860,13 @@ footer {
     margin-bottom: 20px;
   }
   .entete .fas {
-    font-size: 1.5em;
+    font-size: 35px;
   }
   #populaires {
     background-color: #f2f2f2;
     height: 780px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0px;
     margin: 0;
     margin-bottom: 50px;
     padding: 30px 0px 30px 0px;
@@ -917,7 +916,7 @@ footer {
     display: initial;
     margin-bottom: 40px;
     margin-top: 40px;
-    font-size: 30px;
+    font-size: 35px;
     padding-right: 340px;
   }
   .port img {
