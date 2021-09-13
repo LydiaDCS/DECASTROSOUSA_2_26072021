@@ -86,12 +86,17 @@ header {
   grid-area: inscription;
   color: #0065fc;
   font-weight: bold;
+  padding-top: 20px;
 }
 .ancre:hover {
   border-top: solid #0065fc;
-  color: #0065fc;
 }
-
+.ancre{
+  padding-top: 20px;
+}
+#logo{
+  padding-top: 20px;
+}
 form {
   display: flex;
   flex-direction: row;
@@ -253,6 +258,7 @@ article span {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
   padding-left: 15px;
   padding-right: 30px;
   margin-bottom: 20px;
@@ -686,23 +692,33 @@ footer {
       margin-left: 20px;
       margin-right: 20px;
       margin-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 40px;
   }
 
   .inscription {
     grid-area: inscription;
     color: #0065fc;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 32px;
+    margin-right: 20px;
+  }
+  #logo{
+    grid-area: logo;
+    width: 190px;
+    margin-left: 20px;
   }
   .ancre {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0px;
     width: 100%;
     border-bottom: solid#f2f2f2;
     margin-top: 30px;
-    margin-bottom: 30px;
-    padding-right: 90px;
-    padding-left: 90px;
+    margin-bottom: 50px;
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-bottom: 20px;
   }
   .ancre:hover {
     border-bottom: solid #0065fc;
@@ -917,7 +933,7 @@ footer {
     margin-bottom: 40px;
     margin-top: 40px;
     font-size: 35px;
-    padding-right: 340px;
+    padding-right: 320px;
   }
   .port img {
     height: 250px;
