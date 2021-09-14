@@ -132,6 +132,13 @@ header form + p {
   flex-direction: row;
   justify-content: space-around;
 }
+#mobileversion, .mobilerow, .mobilecolumn{
+  display: none;
+}
+#desktopversion{
+  display: initial;
+}
+
 header p span {
   border: solid 2px #f2f2f2;
   border-radius: 50px;
@@ -408,13 +415,7 @@ footer {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 1144px) {
-  #mobile_filtres {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: colunm;
-  }
-}
+
 /**/
 
 @media screen and (min-width: 378px) and (max-width: 768px) {
@@ -443,6 +444,9 @@ footer {
     color: #0065fc;
     font-weight: bold;
   }
+  #logo{
+    width: 130px;
+  }
   .headernav {
     display: flex;
     justify-content: space-around;
@@ -451,10 +455,7 @@ footer {
     padding-left: 50px;
     padding-right: 40px;
   }
-  #mobile_filtres {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+  
   .filtre {
     padding-right: 10px;
   }
@@ -666,7 +667,7 @@ footer {
 
 @media screen and (min-width: 200px) and (max-width: 376px) {
   header {
-    margin: 0;
+    margin: 0px;
     padding-top: 30px;
     width: 100%;
     overflow-x: hidden;
@@ -677,7 +678,7 @@ footer {
     overflow-x: hidden;
     width: 200%;
   }
-  #bloc_paage {
+  #bloc_page {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -689,8 +690,6 @@ footer {
     grid-template-areas:
       "logo . inscription"
       "navbar navbar navbar";
-      margin-left: 20px;
-      margin-right: 20px;
       margin-bottom: 20px;
       padding-left: 20px;
       padding-right: 20px;
@@ -771,38 +770,72 @@ footer {
     padding: 30px 30px 30px 30px;
     font-weight: 600;
   }
-
+  #mobileversion{
+    display: initial;
+  }
+  #desktopversion{
+    display: none;
+  }
+  .mobilerow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    width:100%;
+  }
+  .mobilecolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding-right: 50px;
+  }
   header strong {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-left: 0px;
+    margin-left: 50px;
+    margin-right: 260px;
   }
   header p span {
     border: solid 2px #f2f2f2;
     border-radius: 50px;
-    padding: 13px 15px 13px 15px;
+    padding: 1px 7px 1px 7px;
     padding-left: 0px;
+    margin-left: 0px;
     border-left: none;
-    margin-left: 30px;
+    font-size: 30px;
+    margin-right: 0px;
+  }
+  header .fa {
+    color: #0065fc;
+    font-size: 25px;
+    border: solid 20px #deebff;
+    background-color: #deebff;
+    border-radius: 50%;
+    padding: 5px 5px 5px 5px;
   }
   .inf {
     margin-bottom: 0px;
-    margin-left: 50px;
+    margin-left: 30px;
     font-size: 40px;
   }
-
+  #info {
+    color: #0065fc;
+    background-color: white;
+    border: solid 1px lightgrey;
+    border-radius: 50%;
+    padding: 15px 20px 15px 20px;
+    font-size: 0.6em;
+    margin-left: 15px;
+  }
   header span:hover {
     background-color: #deebff;
   }
   span a {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  
-
-  header h3 + header p {
-    font-size: 35px;
   }
   
 
@@ -814,8 +847,8 @@ footer {
     align-items: center;
     padding-left: 0px;
     padding-right: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   h3{
     font-size: 35px;
@@ -825,19 +858,20 @@ footer {
     height: auto;
     width: 100%;
     border-radius: 35px;
-    padding: 30px 30px 90px 30px;
+    padding: 30px 30px 90px 40px;
     margin: 0;
   }
-
+  
   .hotel img {
     height: 250px;
-    width: 620px;
+    width: 640px;
     border: solid 10px white;
     border-bottom: solid 110px white;
     border-radius: 35px;
     margin-top: 30px;
     box-shadow: 1px 1px 5px#c4c4c9;
-    margin-left: 0;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   section h3 {
     margin-top: 20px;
@@ -853,11 +887,12 @@ footer {
     font-size: 25px;
     font-weight: bold;
     margin-top: 10px;
+    margin-left: 20px;
   }
   article p{
     position: absolute;
-    margin-left: 20px;
-    font-size: 22px;
+    margin-left: 33px;
+    font-size: 25px;
     
   }
 
@@ -873,8 +908,8 @@ footer {
   }
   #populaires {
     background-color: #f2f2f2;
-    height: 780px;
-    width: 100%;
+    height: 950px;
+    width: 108%;
     border-radius: 0px;
     margin: 0;
     margin-bottom: 50px;
@@ -883,11 +918,11 @@ footer {
     margin: 0;
   }
   .populaire img {
-    height: 180px;
-    width: 180px;
-    border: solid 5px white;
-    border-right: solid 350px white;
-    border-radius: 20px;
+    height: 230px;
+    width: 230px;
+    border: solid 10px white;
+    border-right: solid 450px white;
+    border-radius: 35px;
     margin: 10px 30px 10px 30px;
     box-shadow: 1px 1px 5px#c4c4c9;
   }
@@ -902,8 +937,9 @@ footer {
   .populaire p {
     position: absolute;
     top: 0;
-    padding-left: 250px;
-    padding-top: 15px;
+    padding-left: 300px;
+    padding-top: 20px;
+    font-size: 25px;
   }
 
   /*Activités*/
@@ -914,7 +950,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: auto;
+    margin-left: 30px;
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -926,7 +962,7 @@ footer {
     margin-bottom: 40px;
     margin-top: 40px;
     font-size: 35px;
-    padding-right: 320px;
+    padding-right: 315px;
   }
   .port img {
     height: 250px;
@@ -934,7 +970,7 @@ footer {
     border-bottom: solid 90px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 35px;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 15px 0px;
   }
 
   .fort img {
@@ -943,7 +979,7 @@ footer {
     border-bottom: solid 90px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 35px;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 15px 0px;
   }
 
   .iles img {
@@ -1007,8 +1043,9 @@ footer {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: flex-start;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 0px 50px 50px;
     margin-left: 0;
+    width: 100%;
   }
   footer p {
     font-weight: bold;
