@@ -91,10 +91,10 @@ header {
 .ancre:hover {
   border-top: solid #0065fc;
 }
-.ancre{
+.ancre {
   padding-top: 20px;
 }
-#logo{
+#logo {
   padding-top: 20px;
 }
 form {
@@ -132,10 +132,12 @@ header form + p {
   flex-direction: row;
   justify-content: space-around;
 }
-#mobileversion, .mobilerow, .mobilecolumn{
+#mobileversion,
+.mobilerow,
+.mobilecolumn {
   display: none;
 }
-#desktopversion{
+#desktopversion {
   display: initial;
 }
 
@@ -444,7 +446,7 @@ footer {
     color: #0065fc;
     font-weight: bold;
   }
-  #logo{
+  #logo {
     width: 130px;
   }
   .headernav {
@@ -455,7 +457,7 @@ footer {
     padding-left: 50px;
     padding-right: 40px;
   }
-  
+
   .filtre {
     padding-right: 10px;
   }
@@ -669,7 +671,7 @@ footer {
   header {
     margin: 0px;
     padding-top: 30px;
-    width: 100%;
+    width: 109.5%;
     overflow-x: hidden;
   }
   body {
@@ -684,16 +686,16 @@ footer {
     font-weight: normal;
     margin-right: 0;
   }
-  
+
   .navigation {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
       "logo . inscription"
       "navbar navbar navbar";
-      margin-bottom: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      font-size: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
   }
 
   .inscription {
@@ -703,7 +705,7 @@ footer {
     font-size: 32px;
     margin-right: 20px;
   }
-  #logo{
+  #logo {
     grid-area: logo;
     width: 190px;
     margin-left: 20px;
@@ -715,7 +717,7 @@ footer {
     border-bottom: solid#f2f2f2;
     margin-top: 30px;
     margin-bottom: 15px;
-    padding-right: 110px;
+    padding-right: 100px;
     padding-left: 110px;
     padding-bottom: 20px;
   }
@@ -737,25 +739,32 @@ footer {
     margin-left: 50px;
     font-size: 50px;
   }
-  header p{
+  header p {
     font-size: 30px;
     margin-left: 50px;
   }
-
+  #info + p {
+    margin-left: 25px;
+    font-size: 35px;
+  }
   form {
     display: flex;
     flex-direction: row;
     margin-left: 50px;
+    padding-top: 30px;
     font-size: 35px;
     margin-bottom: 30px;
   }
   form i {
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 30px 0px 0px 30px;
     padding: 30px 30px 25px 30px;
   }
 
-  #clic { 
+  #clic {
     padding: 30px 30px 30px 30px;
+    border: solid 3px #f2f2f2;
+    border-left: none;
+    border-right: none;
   }
   #bouton {
     display: none;
@@ -766,42 +775,52 @@ footer {
   #loupe .fas {
     color: white;
     background-color: #0065fc;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 30px 30px 30px 30px;
     border: none;
-    padding: 30px 30px 30px 30px;
+    padding: 35px 30px 35px 30px;
     font-weight: 600;
+    margin-left: -25px;
   }
-  #mobileversion{
+  #mobileversion {
     display: initial;
   }
-  #desktopversion{
+  #desktopversion {
     display: none;
   }
-  .mobilerow{
+  .mobilerow {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 0px;
-    width:100%;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 100%;
   }
   /*voir*/
-  .mobilecolumn{
+  .mobilecolumn {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    margin-left: 0px;
-    padding-right: 50px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 100%;
   }
-  
-  header p span {
-    border: solid 3px #f2f2f2;
+  .mobilecolumn span + span {
+    margin-right: 440px;
+  }
+  .mobilecolumn span {
+    margin-right: 520px;
+    margin-bottom: 20px;
+  }
+  header span {
+    border: solid 5px #f2f2f2;
     border-radius: 50px;
-    padding: 20px 20px 20px 20px;
     padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 20px;
     margin-left: 0px;
     border-left: none;
     font-size: 30px;
-    margin-right: 20px;
     font-weight: bold;
   }
   header .fa {
@@ -814,8 +833,8 @@ footer {
   }
   .inf {
     margin-bottom: 0px;
-    margin-left: 30px;
-    font-size: 40px;
+    margin-left: 50px;
+    font-size: 30px;
   }
   #info {
     color: #0065fc;
@@ -833,7 +852,6 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
   }
-  
 
   /*Body- Hébergements*/
   section {
@@ -846,7 +864,7 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
   }
-  h3{
+  h3 {
     font-size: 35px;
   }
   #hébergements {
@@ -857,7 +875,7 @@ footer {
     padding: 30px 30px 90px 40px;
     margin: 0;
   }
-  
+
   .hotel img {
     height: 250px;
     width: 640px;
@@ -872,7 +890,7 @@ footer {
   section h3 {
     margin-top: 20px;
   }
-  
+
   article {
     position: relative;
   }
@@ -885,11 +903,10 @@ footer {
     margin-top: 10px;
     margin-left: 20px;
   }
-  article p{
+  article p {
     position: absolute;
     margin-left: 33px;
     font-size: 30px;
-    
   }
 
   /*Populaires*/
@@ -905,7 +922,7 @@ footer {
   #populaires {
     background-color: #f2f2f2;
     height: 950px;
-    width: 109%;
+    width: 109.5%;
     border-radius: 0px;
     margin: 0;
     margin-bottom: 50px;
@@ -919,7 +936,7 @@ footer {
     border: solid 10px white;
     border-right: solid 450px white;
     border-radius: 35px;
-    margin: 10px 30px 10px 30px;
+    margin: 10px 30px 0px 30px;
     box-shadow: 1px 1px 5px#c4c4c9;
   }
   .populaire {
