@@ -487,8 +487,8 @@ footer {
   }
 
   .hotel img {
-    width: 230px;
-    height: 110px;
+    width: 260px;
+    height: 130px;
     border: solid 5px white;
     border-bottom: solid 80px white;
     border-radius: 20px;
@@ -525,7 +525,7 @@ footer {
   }
   #populaires {
     background-color: #f2f2f2;
-    height: 780px;
+    height: 820px;
     width: 620px;
     border-radius: 20px;
     margin: 0;
@@ -534,8 +534,8 @@ footer {
     margin-top: 10px;
   }
   .populaire img {
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
     border: solid 5px white;
     border-right: solid 350px white;
     border-radius: 20px;
@@ -555,6 +555,7 @@ footer {
     top: 0;
     padding-left: 250px;
     padding-top: 15px;
+    font-size: 20px;
   }
 
   /*Activités*/
@@ -662,7 +663,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     padding: 50px 50px 50px 50px;
   }
 }
@@ -796,7 +797,7 @@ footer {
     margin-bottom: 20px;
     width: 100%;
   }
-  /*voir*/
+ 
   .mobilecolumn {
     display: flex;
     flex-direction: column;
@@ -806,7 +807,7 @@ footer {
     width: 100%;
   }
   .mobilecolumn span + span {
-    margin-right: 440px;
+    margin-right: 430px;
   }
   .mobilecolumn span {
     margin-right: 520px;
@@ -849,8 +850,8 @@ footer {
     background-color: #deebff;
   }
   span a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /*Body- Hébergements*/
@@ -880,7 +881,7 @@ footer {
     height: 250px;
     width: 640px;
     border: solid 10px white;
-    border-bottom: solid 140px white;
+    border-bottom: solid 150px white;
     border-radius: 35px;
     margin-top: 30px;
     box-shadow: 1px 1px 5px#c4c4c9;
@@ -898,7 +899,7 @@ footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 40px;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     margin-top: 10px;
     margin-left: 20px;
@@ -906,6 +907,7 @@ footer {
   article p {
     position: absolute;
     margin-left: 33px;
+    margin-top: 50px;
     font-size: 30px;
   }
 
@@ -921,7 +923,7 @@ footer {
   }
   #populaires {
     background-color: #f2f2f2;
-    height: 950px;
+    height: 1000px;
     width: 109.5%;
     border-radius: 0px;
     margin: 0;
@@ -931,8 +933,8 @@ footer {
     margin: 0;
   }
   .populaire img {
-    height: 230px;
-    width: 230px;
+    height: 250px;
+    width: 250px;
     border: solid 10px white;
     border-right: solid 450px white;
     border-radius: 35px;
@@ -950,9 +952,9 @@ footer {
   .populaire p {
     position: absolute;
     top: 0;
-    padding-left: 300px;
+    padding-left: 320px;
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 29px;
   }
 
   /*Activités*/
@@ -1036,7 +1038,7 @@ footer {
     bottom: 0;
     padding-left: 45px;
     padding-bottom: 20px;
-    font-size: 25px;
+    font-size: 28px;
   }
   .grande {
     position: relative;
@@ -1046,7 +1048,7 @@ footer {
     bottom: 0;
     padding-bottom: 20px;
     padding-left: 45px;
-    font-size: 25px;
+    font-size: 28px;
   }
   /*foot{*/
 
@@ -1063,9 +1065,9 @@ footer {
   footer p {
     font-weight: bold;
     padding-top: 25px;
-    font-size: 25px;
+    font-size: 28px;
   }
-  footer p a {
+  .propos, .hébergements, .assistance {
     font-size: 25px;
   }
 }
