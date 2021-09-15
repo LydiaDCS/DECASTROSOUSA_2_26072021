@@ -138,7 +138,7 @@ header form + p {
   display: none;
 }
 #desktopversion {
-  display: initial;
+  display:initial;
 }
 
 header p span {
@@ -457,10 +457,30 @@ footer {
     padding-left: 50px;
     padding-right: 40px;
   }
-
+  strong {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  header p span {
+    padding: 0px 5px 0px 5px;
+    padding-left: 0px;
+    border-left: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  header .fa {
+    
+    border: solid 20px #deebff;
+    background-color: #deebff;
+    border-radius: 50%;
+    padding-left: 0px;
+  }
   .filtre {
     padding-right: 10px;
   }
+  
   .inf {
     margin-bottom: 0px;
     padding-bottom: 0;
@@ -525,7 +545,7 @@ footer {
   }
   #populaires {
     background-color: #f2f2f2;
-    height: 820px;
+    height: 900px;
     width: 620px;
     border-radius: 20px;
     margin: 0;
@@ -534,7 +554,7 @@ footer {
     margin-top: 10px;
   }
   .populaire img {
-    height: 200px;
+    height: 220px;
     width: 200px;
     border: solid 5px white;
     border-right: solid 350px white;
@@ -552,10 +572,9 @@ footer {
   }
   .populaire p {
     position: absolute;
-    top: 0;
-    padding-left: 250px;
+    padding-left: 260px;
     padding-top: 15px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /*Activités*/
