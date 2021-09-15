@@ -898,7 +898,7 @@ footer {
 
   .hotel img {
     height: 250px;
-    width: 640px;
+    width: 670px;
     border: solid 10px white;
     border-bottom: solid 150px white;
     border-radius: 35px;
@@ -1000,7 +1000,7 @@ footer {
   }
   .port img {
     height: 250px;
-    width: 640px;
+    width: 670px;
     border-bottom: solid 90px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 35px;
@@ -1009,7 +1009,7 @@ footer {
 
   .fort img {
     height: 250px;
-    width: 640px;
+    width: 670px;
     border-bottom: solid 90px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 35px;
@@ -1018,7 +1018,7 @@ footer {
 
   .iles img {
     height: 250px;
-    width: 640px;
+    width: 670px;
     border-bottom: solid 90px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 35px;
@@ -1026,7 +1026,7 @@ footer {
   }
   .calanques img {
     height: 250px;
-    width: 640px;
+    width: 670px;
     border-bottom: solid 90px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 35px;
@@ -1034,7 +1034,7 @@ footer {
   }
   .dame img {
     height: 250px;
-    width: 640px;
+    width: 670px;
     border-bottom: solid 90px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 35px;
@@ -1042,7 +1042,7 @@ footer {
   }
   .longchamps img {
     height: 250px;
-    width: 640px;
+    width: 670px;
     border-bottom: solid 90px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 35px;
@@ -1079,7 +1079,7 @@ footer {
     align-items: flex-start;
     padding: 50px 0px 50px 50px;
     margin-left: 0;
-    width: 100%;
+    width: 102.5%;
   }
   footer p {
     font-weight: bold;
