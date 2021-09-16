@@ -12,7 +12,6 @@
   </head>
 
   <body>
-    <div id="bloc-page">
       <header>
         <div class="navigation">
           <img
@@ -31,7 +30,7 @@
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p>En plein centre ville ou en pleine nature</p>
         <form class method="POST" action="https://maps.google.fr">
-          <i class="fas fa-map-marker-alt"></i>
+          <i class="ecriture fas fa-map-marker-alt"></i>
           <input
             type="search"
             name="clic"
@@ -42,25 +41,23 @@
           <input id="bouton" type="submit" value="Rechercher" />
           <div id="loupe"><i class="fas fa-search"></i></div>
         </form>
-        <br />
+
         <p id="desktopversion">
-          <strong
-            >Filtres
+          <strong class="fil">Filtres</strong>
             <span class="filtre"
-              ><i class="fa solid fa-money-bill-wave"></i
-              ><a href="#"> Économique</a></span
+              ><i class= "icône fa solid fa-money-bill-wave"></i
+              ><a class="filtrename" href="#"><strong>Économique</strong></a></span
             >
             <span class="filtre"
-              ><i class="fa solid fa-child"></i><a href="#">Familial</a></span
+              ><i class="icône fa solid fa-child"></i><a class="filtrename" href="#"><strong>Familial</strong></a></span
             >
             <span class="filtre"
-              ><i class="fa solid fa-heart"></i><a href="#">Romantique</a></span
+              ><i class="icône fa solid fa-heart"></i><a class="filtrename" href="#"><strong>Romantique</strong></a></span
             >
             <span class="filtre"
-              ><i class="fa fa-dog"></i><a href="#">Animaux autorisés</a></span
-            ></strong
-          ><br />
-        </p>
+              ><i class="icône fa fa-dog"></i><a class="filtrename" href="#"><strong>Animaux autorisés</strong></a></span
+            >
+        </p> <br />
 
         <p id="mobileversion">
           <strong> Filtres </strong>
@@ -84,8 +81,8 @@
           </span>
         </div>
 
-        <div class="inf">
-          <i id="info" class="fas fa-solid fa-info"></i>
+        <div id="inf">
+          <i class="info fas fa-solid fa-info"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
           <br />
         </div>
@@ -197,10 +194,8 @@
                 </p>
               </a>
             </div>
-            <span
-              ><a href="affiche"> <strong>Afficher plus</strong></a></span
-            >
           </div>
+            <span><a class="btnaffiche" href="affiche"> <strong>Afficher plus</strong></a></span>
         </article>
 
         <aside id="populaires">
@@ -273,8 +268,7 @@
         <br /><br />
         <article id="activités">
           <h3 class="h3mobile">Activités à Marseille</h3>
-          <div class="grande">
-            <div class="port">
+            <div class="port grande act">
               <a href="#">
                 <img
                   src="projet2-reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -283,11 +277,9 @@
                 <h4>Vieux Port</h4>
               </a>
             </div>
-          </div>
           <br />
           <aside>
-            <div class="petite">
-              <div class="fort">
+              <div class="fort petite act">
                 <a href="#">
                   <img
                     src="projet2-reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -296,10 +288,8 @@
                   <h4>Fort de Pomègues</h4>
                 </a>
               </div>
-            </div>
             <br />
-            <div class="petite">
-              <div class="iles">
+              <div class="iles petite act">
                 <a href="#">
                   <img
                     src="projet2-reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
@@ -308,11 +298,9 @@
                   <h4>Îles du Frioul</h4>
                 </a>
               </div>
-            </div>
             <br />
           </aside>
-          <div class="grande">
-            <div class="calanques">
+            <div class="calanques grande act">
               <a href="#">
                 <img
                   src="projet2-reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -321,11 +309,9 @@
                 <h4>Parc National des Calanques</h4>
               </a>
             </div>
-          </div>
           <br />
           <aside>
-            <div class="petite">
-              <div class="dame">
+              <div class="dame petite act">
                 <a href="#">
                   <img
                     src="projet2-reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -334,10 +320,8 @@
                   <h4>Notre-Dame-de-la-Garde</h4>
                 </a>
               </div>
-            </div>
             <br />
-            <div class="petite">
-              <div class="longchamps">
+              <div class="longchamps petite act">
                 <a href="#">
                   <img
                     src="projet2-reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
@@ -346,7 +330,6 @@
                   <h4>Parc Longchamp</h4>
                 </a>
               </div>
-            </div>
             <br />
           </aside>
         </article>
@@ -354,22 +337,21 @@
 
       <footer>
         <div class="propos">
-          <p>A propos</p>
+          <p><strong>A propos</strong></p>
           <a href="#">Fonctionnement du site</a> <br /><br />
           <a href="#">Conditions générales de vente</a><br /><br />
           <a href="#">Données et confidentialité</a><br />
         </div>
         <div class="hébergements">
-          <p>Nos hébergements</p>
+          <p><strong>Nos hébergements</strong></p>
           <a href="#">Charte qualité</a><br /><br />
           <a href="#">Soumettre votre hôtel</a><br />
         </div>
         <div class="assistance">
-          <p>Assistance</p>
+          <p><strong>Assistance</strong></p>
           <a href="#">Centre d'aide</a><br /><br />
           <a href="#">Nous contacter</a><br />
         </div>
       </footer>
-    </div>
   </body>
 </html>
