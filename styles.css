@@ -115,6 +115,8 @@ header {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: baseline;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 #mobileversion,
 .mobilerow,
@@ -246,7 +248,7 @@ article {
 /*Populaires*/
 #populaires {
   background-color: #f2f2f2;
-  width: 25%;
+  width: 26%;
   border-radius: 20px;
   margin: 0px 5px 30px 18px;
   padding: 30px 20px 30px 20px;
@@ -635,14 +637,15 @@ footer {
     margin-left: 20px;
   }
   /*revoir*/
-  .post{
+  form{
     display: flex;
     flex-direction: row;
     justify-content: baseline;
+    align-items: flex-start;
   }
   .ecriture {
     background-color: #f2f2f2;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 15px 0px 0px 15px;
     padding: 19px 22px 19px 22px;
     margin-left: 20px;
     margin-right: 0;
@@ -651,8 +654,10 @@ footer {
     border: solid 1px #f2f2f2;
     border-left: none;
     border-right: none;
-    padding: 15px 15px 15px 15px;
-    font-size: 1em;
+    padding: 15px 0px 15px 15px;
+    margin-left: 0;
+    margin-right:0;
+    font-size: 1.1em;
     font-weight: bold;
   }
   #bouton {
@@ -664,11 +669,11 @@ footer {
   #loupe .fas {
     color: white;
     background-color: #0065fc;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 15px 15px 15px 15px;
     border: none;
-    padding: 17px 17px 17px 17px;
+    padding: 18px 17px 17px 17px;
     font-weight: 600;
-    margin-left: 0px;
+    margin-left: -10px;
     margin-right: 20px;
   }
   /**/
@@ -680,6 +685,7 @@ footer {
   }
   .fil{
     font-size: 20px;
+    margin-left: 10px;
   }
   .mobilerow {
     display: flex;
@@ -716,7 +722,6 @@ footer {
     margin-right: 20px;
     margin-left: 0px;
     border-left: none;
-    font-size: 10px;
     font-weight: bold;
   }
   .filtrename {
@@ -735,6 +740,7 @@ footer {
   #inf {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 0px;
     font-size: 15px;
   }
   .info + p{
@@ -751,34 +757,35 @@ footer {
     flex-flow: column-reverse wrap;
     align-items: center;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-right: 0;
-    padding-left: 0;
+    margin:0px;
+    padding:0px;
   }
   #hébergements {
     background-color: white;
     height: auto;
     width: 100%;
-    border-radius: 35px;
-    padding:0;
-    margin:0;
-  }
-
-  .hotel img {
-    height: 130px;
-    width: 330px;
-    border: solid 5px white;
-    border-bottom: solid 80px white;
-    border-radius: 35px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: 1px 1px 5px#c4c4c9;
+    border-radius: 20px;
+    padding: 0px 0px 0px 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px;
   }
   .héberg{
-    padding-right: 0px;
-    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .hotel img {
+    height: 130px;
+    width: 87%;
+    border: solid 5px white;
+    border-bottom: solid 80px white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px#c4c4c9;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   section h3 {
     margin-top: 20px;
@@ -796,7 +803,7 @@ footer {
   }
   article p {
     position: absolute;
-    margin-left: 15px;
+    margin-left: 25px;
     margin-top: 50px;
     font-size: 17px;
   }
@@ -814,21 +821,18 @@ footer {
   #populaires {
     background-color: #f2f2f2;
     width: 100%;
-    height:1000px;
+    height:auto;
     border-radius: 0px;
-    margin-right: 0;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    padding: 5px 0px 5px 0px;
-
+    margin:0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .populaire img {
-    height: 170px;
-    width: 170px;
-    border: solid 10px white;
-    border-right: solid 120px white;
-    border-radius: 35px;
-    margin: 10px 0px 10px 0px;
+    height: 140px;
+    width: 130px;
+    border-right: solid 200px white;
+    border-radius: 20px;
+    margin: 3px 20px 0px 20px;
     box-shadow: 1px 1px 5px#c4c4c9;
   }
   .populaire {
@@ -837,14 +841,14 @@ footer {
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .populaire p {
     position: absolute;
     top: 0;
-    padding-left: 320px;
+    padding-left: 170px;
     padding-top: 20px;
-    font-size: 29px;
+    font-size: 13px;
   }
 
   /*Activités*/
@@ -869,13 +873,13 @@ footer {
   }
   .port img,.fort img,.iles img,.calanques img,.dame img,.longchamps img {
     height: 130px;
-    width: 330px;
+    width: 90%;
   }
   .act img{
     border-bottom: solid 50px white;
     box-shadow: 10px 10px 10px #f2f2f2;
     border-radius: 30px;
-    margin-top: 0;
+    margin: 0px 20px 0px 20px;
   }
   .petite {
     position: relative;
