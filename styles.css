@@ -164,8 +164,8 @@ header {
 /*Body- Hébergements*/
 .hébergements {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap:10px;
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
@@ -194,7 +194,6 @@ h3 {
   color: black;
   margin-top: 30px;
   margin-bottom: 10px;
-  padding-left: 15px;
   font-size: 1.4em;
 }
 .hotel img {
@@ -288,87 +287,71 @@ article {
 }
 
 /*Activités*/
-.activités{
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 30px;
-}
-#activités {
+.activity {
   display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:"port iles fort calanques dame longchamps"; 
-  margin-bottom: 30px;
+  column-gap: 3rem;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 70px;
+}
+.activityTitle {
+  grid-column: 1/-1;
+}
+.activityCard {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+.activityCard:hover {
+  transform: scale(1.02);
+}
+.activityCardWrapimg {
+  position: relative;
+  flex: 1;
+}
+.activityCardWrapimgImg {
+  position: absolute;
+  height: 100%;
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
-.h3mobile {
-  display: none;
+.activityCardTitle {
+  margin: 1rem 1.5rem;
+  font-size: 100%;
 }
-.h3desktop{
-  margin-left: 10px;
-}
-.port img {
-  height: 405px;
-  width: 80%;
-  grid-area: port;
-}
-.fort img {
-  height: 210px;
-  width: 80%;
-  grid-area: fort;
-}
-.iles img {
-  height: 120px;
-  width: 80%;
-  grid-area: iles;
-}
-.calanques img {
-  height: 405px;
-  width: 80%;
-  grid-area: calanques;
-}
-.dame img {
-  height: 150px;
-  width: 80%;
-  grid-area: dame;
-}
-.longchamps img {
-  height: 160px;
-  width: 80%;
-  grid-area: longchamps;
-}
-.act img{
-  border-bottom: solid 50px white;
-  border-radius: 20px;
-  box-shadow: 4px 4px 5px #f2f2f2;
-  margin: 10px 5px 10px 5px;
-  width: 90%;
-}
-.{
-  margin-right: 0px;
-}
-.petite {
-  position: relative;
-}
-.petite h4 {
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 5px;
-  padding-left: 40px;
-  font-weight: bolder;
-}
-.grande {
-  position: relative;
-}
-.grande h4 {
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 25px;
-  padding-left: 40px;
-  font-weight: bolder;
-}
+@media (min-width: 1100px) {
+  .activity {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  }
+  .activityCard1 {
+    grid-row: 2/7;
+    grid-column: 1/2;
+  }
+  .activityCard2 {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+  .activityCard3 {
+    grid-column: 3/4;
+    grid-row: 2/7;
+  }
+  .activityCard4 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .activityCard5 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .activityCard6 {
+    grid-column: 4/5;
+    grid-row: 4/7;
+  }
+  }
 /*foot{*/
 footer {
   display: flex;
@@ -380,7 +363,7 @@ footer {
 }
 
 /*facultatif*/
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .headernav {
     padding-left: 50%;
     padding-right: 5%;
@@ -392,18 +375,38 @@ footer {
     width:100%;
   }
 }
-@media screen and (max-width:1160px){
-  #hébergements{
-    width:30%;
+@media screen and (max-width:1370px) and (min-width:1100px){
+  .hotel img {
+    width: 280px;
+    height: 110px;
+    border-bottom: solid 90px white;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .hotel p{
+    font-size: 20px;
+    padding-left: 45px;
+  }
+  .btnaffiche{
+    padding-left:40px;
   }
   #populaires{
-    width:30%;
+    width: 27%;
   }
+  .populaire img {
+    height: 170px;
+    width: 150px;
+    border-right: solid 190px white;
+  }
+  .populaire p {
+    padding-left: 200px;
+    
 }
-
-@media screen and (max-width:1380px){
+}
+@media screen and (min-width: 768px) and (max-width: 1310px) {
   #hébergements{
-    width:60%;
+    width:50%;
+
   }
   #populaires{
     width: 60%;
@@ -411,7 +414,7 @@ footer {
 }
 
 /*Version Ipad*/
-@media screen and (min-width: 378px) and (max-width: 768px) {
+@media screen and (min-width: 378px) and (max-width: 1100px) {
   header {
     margin: 0;
     padding-top: 30px;
@@ -514,76 +517,35 @@ footer {
   }
 
   /*Activités*/
-  #activités {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  .h3desktop {
-    display: none;
-  }
-  .h3mobile {
-    display: initial;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    font-size: 22px;
-    padding-right: 400px;
-  }
-  .act img{
-    border-bottom: solid 90px white;
-    box-shadow: 10px 10px 10px #f2f2f2;
-    border-radius: 35px;
-    margin: 0px 0px 25px 0px;
-  }
-  .port img {
-    height: 250px;
-    width: 640px;
-  }
-  .fort img {
-    height: 250px;
-    width: 640px;
-  }
-  .iles img {
-    height: 250px;
-    width: 640px;
-  }
-  .calanques img {
-    height: 250px;
-    width: 640px;
-  }
-  .dame img {
-    height: 250px;
-    width: 640px;
-  }
-  .longchamps img {
-    height: 250px;
-    width: 640px;
-  }
-  .petite {
-    position: relative;
-  }
-  .petite h4 {
-    position: absolute;
-    bottom: 0;
-    padding-left: 45px;
-    padding-bottom: 35px;
-    font-size: 20px;
-  }
-  .grande {
-    position: relative;
-  }
-  .grande h4 {
-    position: absolute;
-    bottom: 0;
-    padding-left: 45px;
-    padding-bottom: 35px;
-    font-size: 20px;
-  }
+    .activity {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto 10rem 2rem 10rem 3rem 10rem 2rem 10rem;
+    }
+    .activityCard1 {
+      grid-row: 2/5;
+      grid-column: 1/3;
+    }
+    .activityCard2 {
+      grid-row: 6/7;
+      grid-column: 1/3;
+    }
+    .activityCard3 {
+      grid-column: 3/5;
+      grid-row: 6/9;
+    }
+    .activityCard4 {
+      grid-column: 3/5;
+      grid-row: 2/3;
+    }
+    .activityCard5 {
+      grid-row: 8/9;
+      grid-column: 1/3;
+    }
+    .activityCard6 {
+      grid-column: 3/5;
+      grid-row: 4/5;
+    }
+
   /*foot{*/
   footer {
     display: flex;
@@ -865,56 +827,34 @@ footer {
     padding-top: 20px;
     font-size: 13px;
   }
-
   /*Activités*/
-  #activités {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    width: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-left: 0px;
+  .activity {
+    grid-template-columns: repeat(auto,4,1fr,auto);
+    grid-template-rows: auto 10rem 2rem 10rem 2rem 10rem 2rem 10rem 2rem 10rem 2rem 10rem auto;
   }
-  .h3desktop {
-    display: none;
+  .activityCard1 {
+    grid-row: 2/2;
+    grid-column: 1;
   }
-  .h3mobile {
-    display: initial;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    font-size: 23px;
-    padding-left: 10;
+  .activityCard2 {
+    grid-row: 4/4;
+    grid-column: 1;
   }
-  .port img,.fort img,.iles img,.calanques img,.dame img,.longchamps img {
-    height: 130px;
-    width: 90%;
+  .activityCard3 {
+    grid-column: 1;
+    grid-row: 8/8;
   }
-  .act img{
-    border-bottom: solid 50px white;
-    box-shadow: 10px 10px 10px #f2f2f2;
-    border-radius: 25px;
-    margin: 0px 20px 0px 20px;
+  .activityCard4 {
+    grid-column: 1;
+    grid-row: 10/10;
   }
-  .petite {
-    position: relative;
+  .activityCard5 {
+    grid-row: 6/6;
+    grid-column: 1;
   }
-  .petite h4 {
-    position: absolute;
-    bottom: 0;
-    padding-left: 35px;
-    font-size: 17px;
-    padding-bottom: 2px;
-  }
-  .grande {
-    position: relative;
-  }
-  .grande h4 {
-    position: absolute;
-    bottom: 0;
-    padding-left: 35px;
-    font-size: 17px;
-    padding-bottom: 2px;
+  .activityCard6 {
+    grid-column: 1;
+    grid-row: 12/12;
   }
   /*foot{*/
   footer {
