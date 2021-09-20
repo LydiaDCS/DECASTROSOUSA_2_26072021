@@ -189,7 +189,7 @@ header {
   font-weight: bold;
   color: black;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 1.4em;
 }
 .hotel img {
@@ -542,6 +542,50 @@ footer {
     padding-bottom: 50px;
 }
 }
+@media screen and (min-width:1000px) and (max-width:1050px){
+  .hotel img {
+    width: 180px;
+    height: 110px;
+    border-bottom: solid 70px white;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  .hotel p{
+    font-size: 15px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+  }
+  h2{
+    padding-left: 15px;
+  }
+  .entete{
+    font-size: 15px;
+  }
+  .btnaffiche{
+    padding-left:40px;
+    padding-bottom: 0;
+  }
+  #populaires{
+    width: 30%;
+  }
+  .populaire img {
+    height: 150px;
+    width: 120px;
+    border-right: solid 160px white;
+    margin-bottom: 70px;
+  }
+  .populaire p {
+    padding-left: 170px;
+    font-size: 15px;
+    }
+  #hébergements{
+    width:70%;
+    padding-right:15px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+}
+}
   
 /*Version Ipad*/
 @media screen and (min-width: 378px) and (max-width: 1100px) {
@@ -593,6 +637,7 @@ footer {
     padding-bottom: 0;
     font-size: 20px;
   }
+  
   /*Body- Hébergements*/
   .hébergements {
     display: flex;
@@ -689,7 +734,7 @@ footer {
   }
 }
 /*Version mobile*/
-@media screen and (min-width:200px) and (max-width: 376px) {
+@media screen and (min-width:200px) and (max-width: 378px) {
   header{
     margin:0;
     width: 100%;
@@ -745,7 +790,6 @@ footer {
     font-size: 15px;
     margin-left: 20px;
   }
-  /*revoir*/
   form{
     display: flex;
     flex-direction: row;
@@ -785,7 +829,6 @@ footer {
     margin-left: -10px;
     margin-right: 20px;
   }
-  /**/
   #mobileversion {
     display: initial;
   }
@@ -970,7 +1013,8 @@ footer {
     transition-duration: 0.1s;
   }
   .activity {
-    grid-column: 1;
+    display: grid;
+    grid-column: auto 1 auto;
     grid-template-rows: auto 12rem 2rem 12rem 2rem 12rem 2rem 12rem 2rem 12rem 2rem 12rem auto;
     margin: 30px 20px 40px 20px;
   }
