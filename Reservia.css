@@ -30,7 +30,6 @@ strong {
   font-weight: bold;
 }
 
-
 /*Header*/
 header {
   margin: 10px 80px 0px 60px;
@@ -152,14 +151,7 @@ header {
   margin-bottom: 20px;
 }
 
-
 /* Hébergements*/
-.hostingPopular,
-.hostingMain {
-  background-color: #f2f2f2;
-  border-radius: 1.5rem;
-  padding: 2.5rem;
-}
 .hosting {
   display: grid;
   column-gap: 3rem;
@@ -167,10 +159,21 @@ header {
   margin-left: 50px;
   margin-right: 50px;
 }
+.hostingPopular,
+.hostingMain {
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+}
 .hostingMain {
   display: grid;
   column-gap: 2rem;
   row-gap: 2rem;
+}
+@media (min-width: 925px) {
+  .hostingMain {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .hostingMainHeader {
   grid-column: 1/-1;
@@ -228,12 +231,6 @@ header {
   font-weight: bold;
   font-size: 1.1rem;
 }
-@media (min-width: 925px) {
-  .hostingMain {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 
 /*Populaires*/
 .hostingPopular {
@@ -277,9 +274,6 @@ header {
 .hostingPopularWrapcontentContentWhitespace {
   flex: 1;
 }
-.hostingPopularhostingMainCard {
-  height: 8.75rem;
-}
 
 @media (max-width: 1440px) {
   .hosting {
@@ -295,7 +289,6 @@ header {
     grid-column: 1/-1;
   }
 }
-
 
 /*Activités*/
 .activity {
@@ -379,7 +372,6 @@ footer {
     padding-right: 5%;
   }
 }
-
 
 /*Version Ipad*/
 @media screen and (min-width: 730px) and (max-width: 1100px) {
@@ -542,19 +534,19 @@ footer {
     padding-right: 0px;
   }
 
-  @media screen and (min-width:400px) and (max-width:755px) {
+  @media screen and (min-width: 400px) and (max-width: 755px) {
     .ancre {
-        font-size: 15px;
-        margin: 0;
-        width: 100%;
-        border-bottom: solid#f2f2f2;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        padding-right: 20px;
-        padding-left: 20%;
-      }  
+      font-size: 15px;
+      margin: 0;
+      width: 100%;
+      border-bottom: solid#f2f2f2;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      padding-right: 20px;
+      padding-left: 20%;
     }
+  }
   header h3 {
     margin-top: 0px;
     margin-left: 20px;
@@ -642,7 +634,6 @@ footer {
     width: 250px;
     margin-bottom: 20px;
   }
-  
   .filtre {
     border: solid 3px #f2f2f2;
     border-radius: 50px;
@@ -675,7 +666,6 @@ footer {
   .info + p {
     margin-left: 0px;
   }
-
   .filtre:hover {
     background-color: #deebff;
   }
@@ -689,6 +679,7 @@ footer {
     margin-right: 0;
     width: 100%;
   }
+
   /*Body- Hébergements*/
   @media (max-width: 650px) {
     .hostingMain {
@@ -700,7 +691,6 @@ footer {
     padding: 0;
     margin: 1rem;
   }
-
   .hostingMainViewmore {
     margin-left: 5px;
     font-size: 1.15rem;
@@ -710,13 +700,11 @@ footer {
   .hostingPopular {
     display: grid;
     row-gap: 1rem;
-    align-items: start;
     grid-template-rows: repeat(3, 1fr);
     border-radius: 0;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
   .hostingPopularWrapcontentWrapimg {
     position: relative;
     min-height: 100%;
@@ -724,13 +712,13 @@ footer {
     min-width: 39%;
     max-width: 39%;
   }
-
   @media (max-width: 1100px) {
     .hostingPopular {
       grid-template-columns: 1fr;
       grid-template-rows: auto repeat(3, 9.5rem);
     }
   }
+
   /*Activités*/
   .activityCard {
     box-shadow: 0 0 10px #0000002e;
