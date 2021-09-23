@@ -23,18 +23,8 @@ a:hover,
 .ancre:hover {
   color: #0065fc;
 }
-
-.fa {
-  color: #0065fc;
-  font-size: 0.7em;
-}
-.empty {
-  color: #f2f2f2;
-  font-size: 0.7em;
-}
-
 header h3 {
-  margin-top: 1px;
+  margin-top: 5px;
   padding-left: 0px;
 }
 strong {
@@ -157,6 +147,7 @@ header {
 }
 #inf {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
@@ -183,6 +174,7 @@ header {
 }
 .hostingMainHeader {
   grid-column: 1/-1;
+  margin-left: -5px;
 }
 .hostingMainHeaderTitle {
   margin: 0;
@@ -259,6 +251,7 @@ header {
 }
 .hostingPopularWrapcontent {
   display: flex;
+  flex-direction: row;
   align-items: stretch;
   height: 100%;
   overflow: auto;
