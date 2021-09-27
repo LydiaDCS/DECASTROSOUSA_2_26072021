@@ -561,7 +561,6 @@ footer {
   form {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
     align-items: flex-start;
   }
   .ecriture {
@@ -731,7 +730,7 @@ footer {
   }
   .activity {
     display: grid;
-    grid-column: auto 1 auto;
+    grid-column: 1 ;
     grid-template-rows: auto 12rem 2rem 12rem 2rem 12rem 2rem 12rem 2rem 12rem 2rem 12rem auto;
     margin: 30px 1rem 40px 1rem;
   }
